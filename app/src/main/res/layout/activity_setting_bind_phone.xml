@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:m_title="手机号码" />
+
+
+    <LinearLayout
+        android:id="@+id/llyt_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginTop="28dp">
+            <ImageView
+                android:id="@+id/iv_now_bind_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/binding_phone_pic_undone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_phone_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21.6dp"
+            android:text="@string/phone_hint_now"
+            android:textColor="@color/gray_word"
+            android:textSize="14sp" />
+
+
+
+        <EditText
+            android:id="@+id/et_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="44dp"
+            android:background="@drawable/shape_common_button_normal_dark"
+            android:hint="@string/phone_hint_input"
+            android:inputType="number"
+            android:maxLength="11"
+            android:paddingLeft="17dp"
+            android:singleLine="true"
+            android:textColor="#FF000000"
+            android:textColorHint="@color/gray_word"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shape_common_button_normal_dark">
+
+            <TextView
+                android:id="@+id/tv_get_verify_code"
+                android:layout_width="99dp"
+                android:layout_height="36dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/shape_blue_button"
+                android:gravity="center"
+                android:text="@string/register_get_verify_code"
+                android:textColor="@color/unclickable"
+                android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/et_bind_verify_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@id/tv_get_verify_code"
+                android:background="@android:color/transparent"
+                android:hint="验证码"
+                android:inputType="number"
+                android:paddingLeft="17dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="@color/gray_word"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/btn_binding"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/rlyt_password_input"
+            android:layout_marginLeft="41dp"
+            android:layout_marginRight="41dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:background="@drawable/selector_blue_button_bg"
+            android:clickable="false"
+            android:text="绑定"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

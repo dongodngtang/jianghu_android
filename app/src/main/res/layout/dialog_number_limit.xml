@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#7F000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+
+            <TextView
+                android:id="@+id/tv_calendar_select"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/txt_dark_live_location"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingRight="16dp"
+                android:text="完成"
+                android:textColor="@color/color_theme"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#FFE1E1E1" />
+
+        <net.doyouhike.app.bbs.ui.widget.common.location.NumPickerWheel
+            android:id="@+id/wheel_num_picker"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

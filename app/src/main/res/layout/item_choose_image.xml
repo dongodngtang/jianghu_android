@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="116dp"
+    android:layout_height="117dp"
+    android:background="@color/gray_bg">
+
+    <ImageView
+        android:id="@+id/iv_choose_camera"
+        android:layout_width="46dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_choose_image"
+        android:layout_width="116dp"
+        android:layout_height="117dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_choose_image_take"
+        android:layout_width="39dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@id/iv_choose_image"
+        android:layout_alignRight="@id/iv_choose_image"
+        android:gravity="center">
+
+        <View
+            android:id="@+id/iv_choose_image_take"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:background="@drawable/selector_item_choose_image_bg" />
+    </RelativeLayout>
+
+</RelativeLayout>

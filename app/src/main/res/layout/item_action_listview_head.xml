@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="7dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:textColor="@color/txt_light_tip_26"
+        android:textSize="14sp" />
+
+</RelativeLayout>

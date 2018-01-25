@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/color_theme"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_portrait"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_gravity="top"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/bg_user_avatar"
+        android:padding="2dp"
+        android:src="@drawable/none_header" />
+
+    <ImageView
+        android:id="@+id/iv_user_sex"
+        android:layout_width="12dp"
+        android:layout_height="12dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_nick_name"
+            style="@style/txt_title_dark_standard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="昵称"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            android:layout_marginRight="14dp"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/tv_autograph"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/txt_dark_remark"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llyt_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_follow_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:text="@string/zero"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/follow"
+                    android:textColor="@color/txt_dark_remark"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llyt_follower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_follower_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="1dp"
+                    android:text="@string/zero"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:text="@string/follower"
+                    android:textColor="@color/txt_dark_remark"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:id="@+id/iv_mark_new_msg"
+                    android:layout_width="6dp"
+                    android:layout_height="6dp"
+                    android:layout_gravity="top"
+                    android:background="@drawable/shape_followers_tip"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_user_other_button"
+                style="@style/txt_dark_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:background="@drawable/selector_common_button_dark"
+                android:clickable="true"
+                android:gravity="center"
+                android:minEms="4"
+                android:paddingBottom="6dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="6dp"
+                android:textColor="@color/txt_button_common_dark"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

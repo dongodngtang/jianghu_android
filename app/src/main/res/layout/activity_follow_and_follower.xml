@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="返回"
+        app:right_src="@drawable/selector_msg_bell" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lv_follow_and_follower_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            ptr:ptrAnimationStyle="rotate"
+            ptr:ptrHeaderTextColor="#CCCCCC"
+            ptr:ptrMode="both" />
+
+
+        <LinearLayout
+            android:id="@+id/llyt_no_follow_and_follower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF3F3F3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_nothing"
+                android:layout_width="82dp"
+                android:layout_height="84dp"
+                android:src="@drawable/ic_me_follow_nofollow_3x" />
+
+            <TextView
+                android:id="@+id/tv_nothing_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:text="@string/no_follow"
+                android:textColor="#FF404040" />
+
+            <TextView
+                android:id="@+id/tv_nothing_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/no_follow_hint"
+                android:textColor="@color/gray_word" />
+
+            <Button
+                android:id="@+id/btn_nothing_btn"
+                android:layout_width="142dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/selector_follow_and_follower_noting_btn"
+                android:text="@string/go_follow"
+                android:textColor="@color/clickable"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/widget_network_anomaly" />
+
+        <include layout="@layout/widget_login" />
+
+    </RelativeLayout>
+
+</LinearLayout>

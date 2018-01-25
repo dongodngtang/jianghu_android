@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 顶部栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        android:background="@color/color_theme">
+
+        <RelativeLayout
+            android:id="@+id/btn_frag_home_condition"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_frag_home_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/follow"
+                android:textColor="@color/txt_title_dark_standard"
+                android:textSize="@dimen/txt_activity_title" />
+
+            <ImageView
+                android:id="@+id/iv_frag_home_condition_indicate"
+                android:layout_width="15dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_frag_home_condition"
+                android:src="@drawable/nav_icon_indicator_expand" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iv_release_memu"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:src="@drawable/selector_icon_live_add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/iv_add_follow"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/selector_appbar_addfriend" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/login"
+            android:textColor="@color/txt_title_dark_small"
+            android:textSize="@dimen/txt_activity_sub_title" />
+
+        <TextView
+            android:id="@+id/tv_to_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/register"
+            android:textColor="@color/txt_title_dark_small"
+            android:textSize="@dimen/txt_activity_sub_title" />
+    </RelativeLayout>
+
+    <net.doyouhike.app.library.ui.widgets.XViewPager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background">
+
+    </net.doyouhike.app.library.ui.widgets.XViewPager>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llyt_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_theme"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <net.doyouhike.app.bbs.ui.widget.action.XEditText
+            android:id="@+id/et_search_user"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_bg"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/to_search_activity_search_user"
+            android:imeOptions="actionSearch"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="@color/txt_dark_content"
+            android:textColorHint="@color/txt_dark_remark"
+            android:drawablePadding="7dp"
+            android:textCursorDrawable="@drawable/shape_search_cursor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center"
+            android:onClick="rollBack"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="@string/cancel"
+            android:textColor="@color/txt_title_dark_small"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F2F2F2"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:text="@string/search_result"
+            android:textColor="#bfbfbf" />
+
+
+
+        <ListView
+            android:id="@+id/lv_search_result"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="@null"
+            android:dividerHeight="0dp" >
+        </ListView>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_no_content" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_login" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_network_anomaly" />
+
+</LinearLayout>

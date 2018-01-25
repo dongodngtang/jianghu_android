@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:background="@drawable/about_background_3x">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:background="#42000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_mofang"
+                android:textColor="#CCFFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@string/about_mofang_message"
+                android:textColor="#CCFFFFFF"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <net.doyouhike.app.bbs.ui.widget.common.TitleView
+            android:id="@+id/navigation_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vi_activity_navi_height"
+            android:layout_marginBottom="10dp"
+            app:left_src="@drawable/ic_back_3x"
+            app:left_text="@string/setting"
+            app:title_background="@android:color/transparent" />
+    </RelativeLayout>
+
+
+    <!-- 时光机 -->
+    <RelativeLayout
+        android:id="@+id/rlyt_time_machine"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:paddingLeft="17dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/time_machine"
+            android:textColor="@color/setting_item_title"
+            android:textSize="16sp" />
+
+
+        <ImageView style="@style/vi_setting_main_item_arrow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_divider" />
+    </RelativeLayout>
+
+
+    <!-- 官方微信 -->
+    <RelativeLayout
+        android:id="@+id/rlyt_official_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:paddingLeft="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/official_wechat"
+            android:textColor="@color/setting_item_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="@string/official_wechat_account"
+            android:textColor="@color/clickable"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_divider" />
+    </RelativeLayout>
+
+    <!-- 联系电话   -->
+    <RelativeLayout
+        android:id="@+id/rlyt_official_phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:paddingLeft="17dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/official_phone"
+            android:textColor="@color/setting_item_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="@string/official_phone_number"
+            android:textColor="@color/clickable"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_divider" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_official_mailbox"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:paddingLeft="17dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="@string/official_mailbox"
+            android:textColor="@color/setting_item_title"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:text="@string/official_mailbox_number"
+            android:textColor="@color/clickable"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!-- 把磨房推荐给朋友 -->
+    <TextView
+        android:id="@+id/tv_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:gravity="center"
+        android:text="把磨房推荐给朋友"
+        android:textColor="#DD000000"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <TextView
+            android:id="@+id/tv_edit_server_url"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/tv_switch_log"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:textColor="@color/gray_word"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="14dp"
+        android:textColor="#FF48ADA0"
+        android:textSize="14sp"
+        android:text="磨房 V"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

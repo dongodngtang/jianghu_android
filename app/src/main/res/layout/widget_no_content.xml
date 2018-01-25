@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_not_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="82dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="23dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_search_empty" />
+
+    <TextView
+        android:id="@+id/tv_no_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="@string/no_result"
+        android:textColor="@color/txt_title_light_standard"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_no_result_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#BFBFBF"
+        android:textSize="14sp" />
+
+</LinearLayout>

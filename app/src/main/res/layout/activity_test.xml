@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="网络测试1"
+        android:textSize="20sp"
+        android:background="@drawable/selector_action_detail_discuess"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_test2"
+        android:layout_below="@+id/tv_test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="新网络测试2"
+        android:background="@drawable/selector_action_detail_discuess"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/tv_test3"
+        android:layout_below="@+id/tv_test2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="网络测试Volley"
+        android:background="@drawable/selector_action_detail_discuess"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+</LinearLayout>

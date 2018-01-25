@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/setting"
+        app:m_title="@string/bell_setting_title" />
+
+
+    <LinearLayout
+        android:id="@+id/vi_setting_msg_parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/comment"
+                android:textColor="@color/setting_item_title"
+                android:textSize="@dimen/txt_title_small" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_comment_bell_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/like"
+                android:textColor="@color/setting_item_title"
+                android:textSize="@dimen/txt_title_small" />
+
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_like_bell_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="@string/action"
+                android:textColor="@color/setting_item_title"
+                android:textSize="@dimen/txt_title_small" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_action_bell_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/color_divider" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#FFFFFFFF"
+            android:paddingLeft="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="粉丝"
+                android:textColor="@color/setting_item_title"
+                android:textSize="@dimen/txt_title_small" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sc_follow_bell_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/widget_gray_separator" />
+
+    <!-- 通知设置的提示 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/bell_setting_tip"
+        android:textColor="@color/txt_light_tip_26"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

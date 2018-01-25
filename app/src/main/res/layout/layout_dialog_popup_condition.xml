@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_action_event_types"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000000"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:id="@+id/vi_lay_home_tag_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lv_event_type"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@null" >
+            </ListView>
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="15dp"
+                android:background="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/sv_road_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <net.doyouhike.app.bbs.ui.widget.action.InterceptScrollViewPager
+            android:id="@+id/vp_des_road_ad"
+            android:layout_width="match_parent"
+            android:layout_height="210dp">
+
+        </net.doyouhike.app.bbs.ui.widget.action.InterceptScrollViewPager>
+
+        <LinearLayout
+            android:id="@+id/ll_des_and_road_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vp_des_road_ad"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_des_road_city"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="left|center"
+                android:textColor="@color/text_black_color_default"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tv_des_road_city"
+                android:layout_marginLeft="14dp"
+                android:background="@color/color_divider" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_dest_road_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_des_and_road_city"
+            android:divider="@null"
+            android:dividerHeight="0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_road_detail_top_back">
+
+        <LinearLayout
+            android:id="@+id/rl_road_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_road_detail_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

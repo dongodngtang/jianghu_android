@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 顶部栏 -->
+
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/title_act_report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        app:m_title="举报"
+        app:right_text="@string/sure_to_report" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center|left"
+        android:text="@string/please_select_report_reason"
+        android:textColor="@color/txt_light_tip_26"
+        android:textSize="14sp" />
+
+
+    <ListView
+        android:id="@+id/lv_report"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F2F2F2"
+        android:divider="@null"/>
+
+</LinearLayout>

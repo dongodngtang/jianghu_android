@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.doyouhike.app.bbs.ui.widget.action.DeletableEditText xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:cursorVisible="true"
+    android:textSize="14sp"
+    android:layout_marginBottom="5dp"
+    android:textColorHint="@color/txt_light_tip_26"
+    android:textColor="@color/text_action_detail_more_content"
+     >
+
+</net.doyouhike.app.bbs.ui.widget.action.DeletableEditText>

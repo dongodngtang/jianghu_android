@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF000000"
+    android:orientation="vertical">
+
+    <!-- android:fitsSystemWindows="true" -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/bottom_bar"
+            layout="@layout/widget_main_bottom_bar" />
+
+        <net.doyouhike.app.bbs.ui.widget.action.ForbidSlideViewPage
+            android:id="@+id/vp_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_bar"
+            android:background="@color/gray_bg_less"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/bottom_bar"
+            android:background="@color/alpha_05_black" />
+    </RelativeLayout>
+
+</LinearLayout>

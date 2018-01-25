@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <!-- 顶部栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rlyt_top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_standard"
+            android:background="@color/color_theme">
+
+            <TextView
+                android:id="@+id/tv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="14dp"
+                android:text="@string/send"
+                android:textColor="@color/txt_title_right"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:text="@string/cancel"
+                android:textColor="@color/txt_title_right"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_text_count"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"
+                android:minWidth="22dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_send"
+                android:background="@drawable/txt_input_range_indicate"
+                android:gravity="center"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:textColor="@color/txt_input_range_indicate"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!-- 编辑框 -->
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@null"
+                android:gravity="top"
+                android:hint="@string/say_something"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/txt_title_light_standard"
+                android:textColorHint="@color/gray_word"
+                android:textSize="15sp" />
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dragGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:gravity="center"
+                android:numColumns="3" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_add_tags_and_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/llyt_tags"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/selector_list_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icon_tag"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center_vertical"
+                    android:src="@drawable/live_icon_label" />
+
+                <TextView
+                    android:id="@+id/tv_tag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_tags"
+                    android:textColor="@color/txt_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_tag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_tag3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <!-- 填充 -->
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/iv_remove_tags"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_marginRight="9dp"
+                    android:padding="12dp"
+                    android:src="@drawable/input_icon_delete_black" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/llyt_location"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/selector_list_item_bg">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_gravity="top"
+                    android:layout_marginLeft="45dp"
+                    android:background="@color/color_divider" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/ic_post_location" />
+
+                <TextView
+                    android:id="@+id/tv_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="46dp"
+                    android:text="@string/add_location"
+                    android:textColor="@color/txt_content"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_act_edit_live_dest_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:text="支持目的地、线路"
+                    android:textColor="@color/txt_live_tip"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_remove_location"
+                    android:layout_width="43dp"
+                    android:layout_height="43dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="9dp"
+                    android:padding="12dp"
+                    android:src="@drawable/input_icon_delete_black" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

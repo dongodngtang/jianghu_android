@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/setting"
+        app:m_title="@string/feedback_suggest"
+        app:right_text="@string/submit"
+        app:right_text_color="@color/txt_title_right" />
+
+    <EditText
+        android:id="@+id/et_feedback_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_background"
+        android:gravity="top"
+        android:hint="@string/want_to_say_to_us"
+        android:padding="10dp"
+        android:textColor="@color/black_word"
+        android:textColorHint="@color/gray_word"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

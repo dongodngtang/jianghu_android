@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_network_anomaly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:paddingTop="86dp"
+    android:background="#FFF3F3F3"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_nothing_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/gray_word"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_nothing_favorite"
+        android:layout_width="267dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="26px"
+        android:src="@drawable/nothing_favorite_3x"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vi_err_tip"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_tip_first_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:text="@string/network_anomaly"
+            android:textColor="#FF404040"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_tip_second_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/try_to_click_refresh"
+            android:textColor="#BFBFBF"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_tip_retry"
+            android:layout_width="126dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_follow_and_follower_noting_btn"
+            android:text="@string/refresh"
+            android:textColor="@color/clickable"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

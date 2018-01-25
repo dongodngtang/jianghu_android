@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_road_list_item"
+    android:background="#F6F8F6"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:paddingLeft="7dp"
+    android:paddingRight="7dp">
+
+    <ImageView
+        android:id="@+id/iv_road_list_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_road_list_item" />
+
+    <ImageView
+        android:id="@+id/iv_roadList_type"
+        android:layout_width="12dp"
+        android:layout_height="13dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="13dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ico_road_list_item_type" />
+
+    <TextView
+        android:id="@+id/tv_roadList_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/iv_roadList_type"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="13dp"
+        android:text="东莞松山湖环湖骑行"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_roadList_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/iv_roadList_type"
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+</RelativeLayout>

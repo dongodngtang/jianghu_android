@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/vi_lay_me_title"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+
+    <View
+        android:id="@+id/v_me_top_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF" />
+
+
+    <ProgressBar
+        android:id="@+id/pb_lay_me_refresh"
+        style="@style/CircularProgressBar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="12dp"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/tv_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:text="@string/nickname"
+        android:textColor="#FFFFFFFF"
+        android:textSize="17sp" />
+
+    <ImageView
+        android:id="@+id/iv_setting"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="5dp"
+        android:padding="15dp"
+        android:src="@drawable/selector_me_setting" />
+
+</RelativeLayout>

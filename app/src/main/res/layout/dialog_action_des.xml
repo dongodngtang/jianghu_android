@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_action_event_des"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:background="@drawable/shape_me_action_options_rectangle"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_des_all"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:background="@color/item_pressed"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="34dp"
+            android:text="@string/all"
+            android:textColor="#2B96E8"
+            android:textSize="15dp" />
+
+        <GridView
+            android:id="@+id/gv_atcion_des"
+            android:layout_width="match_parent"
+            android:layout_height="268dp"
+            android:background="@color/bg_white"
+            android:numColumns="3"
+            android:cacheColorHint="@android:color/transparent"
+            android:orientation="vertical" />
+
+        <View
+            android:layout_width="30dp"
+            android:layout_height="2dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/shape_me_action_options_bottom_rectangle" />
+    </LinearLayout>
+
+</LinearLayout>

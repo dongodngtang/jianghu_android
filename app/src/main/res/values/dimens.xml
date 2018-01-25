@@ -1,0 +1,91 @@
+<resources>
+    <dimen name="common_load_more_progress_size">30dp</dimen>
+    <dimen name="common_load_more_padding">20dp</dimen>
+
+
+    <!--common-->
+    <dimen name="txt_activity_title">17sp</dimen>
+    <dimen name="txt_activity_sub_title">14sp</dimen>
+    <dimen name="vi_activity_navi_height">44dp</dimen>
+    //标签相关
+    <dimen name="home_tag_item_height">44dp</dimen>
+    <dimen name="home_tag_item_text">15sp</dimen>
+
+    //首页条件筛选框
+    <dimen name="home_popup_txt_site">17sp</dimen>
+    <dimen name="home_popup_margin_vertical">15dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+
+
+    <!--约伴_更多-->
+    <dimen name="with_more_margin_horizontal">15dp</dimen>
+    <dimen name="with_more_margin_vertical">10dp</dimen>
+    <dimen name="with_more_content_height">44dp</dimen>
+    <dimen name="with_more_content_txt_size">14sp</dimen>
+    <!--约伴_文字模板-->
+    <dimen name="with_template_title_height">46dp</dimen>
+    <dimen name="txt_with_template_title">16sp</dimen>
+    <dimen name="txt_with_template_content">14sp</dimen>
+    <dimen name="with_template_margin_horizontal">25dp</dimen>
+    <dimen name="with_template_margin_vertical">15dp</dimen>
+
+
+    <dimen name="forwarding_side">6dp</dimen>
+
+
+    <dimen name="follow_btn_width">63dp</dimen>
+    <dimen name="follow_btn_height">24dp</dimen>
+
+
+    <dimen name="px_1">1px</dimen>
+    <dimen name="dimen_10px">6dp</dimen>
+    <dimen name="dimen_8px">5dp</dimen>
+    <dimen name="px_6">6px</dimen>
+    <dimen name="dimen_12px">7dp</dimen>
+    <dimen name="px_9">9px</dimen>
+    <dimen name="px_10">10px</dimen>
+    <dimen name="dimen_17dp">17dp</dimen>
+    <dimen name="dimen_24px">14dp</dimen>
+    <dimen name="dimen_32px">18dp</dimen>
+    <dimen name="px_20">20px</dimen>
+    <dimen name="px_24">24px</dimen>
+    <dimen name="px_28">28px</dimen>
+    <dimen name="px_30">30px</dimen>
+    <dimen name="px_72">72px</dimen>
+    <dimen name="dimen_48px">24dp</dimen>
+
+
+    <dimen name="dimen_1dp">1dp</dimen>
+    <dimen name="dimen_4dp">4dp</dimen>
+    <dimen name="dimen_5dp">5dp</dimen>
+    <dimen name="dimen_7dp">7dp</dimen>
+    <dimen name="dimen_10do">10dp</dimen>
+    <dimen name="dimen_11dp">11dp</dimen>
+    <dimen name="dimen_25dp">25dp</dimen>
+    <dimen name="dimen_27dp">27dp</dimen>
+    <dimen name="dimen_40dp">40dp</dimen>
+    <dimen name="dimen_44dp">44dp</dimen>
+    <dimen name="dimen_45dp">45dp</dimen>
+    <dimen name="dimen_50dp">50dp</dimen>
+    <dimen name="dimen_51dp">51dp</dimen>
+    <dimen name="dimen_56dp">56dp</dimen>
+    <dimen name="dimen_73dp">73dp</dimen>
+    <dimen name="dimen_109dp">109dp</dimen>
+    <dimen name="dimen_100dp">100dp</dimen>
+    <dimen name="dimen_138dp">138dp</dimen>
+    <dimen name="dimen_142dp">142dp</dimen>
+    <dimen name="dimen_154dp">154dp</dimen>
+    <dimen name="dimen_180dp">180dp</dimen>
+
+
+    <dimen name="dimen_14sp">14sp</dimen>
+
+
+    <dimen name="txt_normal_px_28">28px</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_10">10sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

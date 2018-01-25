@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--主色 ＃48ADA0 用作链接、强调-->
+    <color name="color_theme">#FF48ADA0</color>
+    <!--辅助色 ＃399793 用作用户名称／点击/辅助-->
+    <color name="color_assist">#FF297875</color>
+    <!--辅助色 ＃399793 用作用户名称／点击/辅助-->
+    <color name="color_embellish">#FFFF7510</color>
+    <!--背景色 FFF6F8F6-->
+    <color name="color_background">#FFF6F8F6</color>
+    <!--局部底色／button不可点／列表点击反馈 ＃EDF3F1-->
+    <color name="color_background_part">#FFEDF3F1</color>
+    <!--分割线-->
+    <color name="color_divider">#FFE1E1E1</color>
+    <!--警告色-->
+    <color name="color_alarm">#FFE1E1E1</color>
+    <!--SnackBar 提示-->
+    <color name="color_snack">#FF48ADA0</color>
+
+    <color name="snack_action">#FF48ADA0</color>
+    <color name="snack_bg">#FF323232</color>
+
+    <color name="system_bar_bg">#3B9B8E</color>
+
+    <color name="item_press_bg">#FFDDDDDD</color>
+
+
+    <color name="color_web_link">#0076FF</color>
+
+    <!--浅色标题文字 用于标题类文本 #DE000000-->
+    <color name="txt_title_light_standard">#222222</color>
+    <!--浅色小标题 用于短且重要文本 ＃black 87%-->
+    <color name="txt_title_dark_87">#222222</color>
+    <!--浅色正文 用于长文本 54%-->
+    <color name="txt_light_content_54">#757575</color>
+    <!--浅色提示文字 用于输入提示文本等 26%-->
+    <color name="txt_light_tip_26">#BDBDBD</color>
+    <!--浅色备注文字 用于备注、提示类文本 26%-->
+    <color name="txt_light_remark">#BDBDBD</color>
+
+    <color name="txt_content">#8A000000</color>
+
+    <!--深色标题文字 用于标题类文本-->
+    <color name="txt_title_dark_standard">#FFFFFFFF</color>
+    <!--深色小标题 用于短且重要文本-->
+    <color name="txt_title_dark_small">#DEFFFFFF</color>
+    <!--深色正文 用于长文本-->
+    <color name="txt_dark_content">#DEFFFFFF</color>
+    <!--深色提示文字 用于输入提示文本等-->
+    <color name="txt_dark_tip">#8AFFFFFF</color>
+    <!--深色备注文字 用于备注、提示类文本-->
+    <color name="txt_dark_remark">#8AFFFFFF</color>
+
+    <!--时间 点赞数 评论数-->
+    <color name="txt_live_tip">#42000000</color>
+
+
+    <!--动态的昵称-->
+    <color name="txt_dark_live_nickname">#FF297875</color>
+    <!--动态的昵称-->
+    <color name="txt_dark_live_location">#FF48ADA0</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <color name="default_image_background">#edf3f1</color>
+
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="black">#FF000000</color>
+    <color name="base_bg">@color/color_background</color>
+
+    <color name="transparent">#00000000</color>
+
+
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_26_black">#42000000</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/color_theme</item>
+
+    </integer-array>
+
+    <color name="clickable">#2B96E8</color>
+    <color name="base_msg_color">#ff999999</color>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+
+
+    <color name="elv_btn_pressed">#ff33b5e5</color>
+    <color name="elv_btn_focused">#ff0099cc</color>
+    <color name="elv_btn_normal">#00000000</color>
+
+</resources>

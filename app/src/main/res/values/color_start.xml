@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--启动  color -->
+
+    <!--用户引导页 版本 -->
+    <color name="text_user_guide_version">#41ffffff</color>
+
+    <!--用户引导页 点击按钮 -->
+    <color name="text_user_guide_buttom">@color/white</color>
+</resources>

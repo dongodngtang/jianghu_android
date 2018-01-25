@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_item_top"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF3F3F3"
+    android:orientation="vertical"
+    android:paddingTop="10dp" >
+
+    <include layout="@layout/widget_gray_separator" />
+
+</LinearLayout>

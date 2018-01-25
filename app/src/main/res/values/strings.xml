@@ -1,0 +1,517 @@
+<resources>
+
+    <string name="app_name">磨房</string>
+
+    <!-- value -->
+    <string name="zero">0</string>
+    <string name="six">6</string>
+    <string name="tan">10</string>
+    <string name="second_sixty">60秒</string>
+    <string name="second">秒</string>
+
+    <!-- common -->
+    <string name="confirm">确定</string>
+    <string name="save">保存</string>
+    <string name="cancel">取消</string>
+    <string name="complete">完成</string>
+
+    <string name="save_fail">保存失败</string>
+    <string name="roll_back">返回</string>
+    <string name="all">全部</string>
+
+
+    <string name="only_spinsor">只看发起的活动</string>
+    <string name="only_join">只看参与的活动</string>
+    <string name="event_recruiting">召集中</string>
+    <string name="event_full">已满员</string>
+    <string name="event_expiration">已截止</string>
+    <string name="event_finish">已结束</string>
+    <string name="event_cancel">已取消</string>
+    <string name="event_close">已删除</string>
+
+    <string name="comment">评论</string>
+    <string name="comment_title">被评论的</string>
+    <string name="like">赞</string>
+
+    <string name="action">活动</string>
+    <string name="add86">+86</string>
+    <string name="tick">勾选</string>
+    <string name="say_something">说点什么吧...</string>
+    <string name="consent">同意</string>
+    <string name="submit">提    交</string>
+    <string name="bind">绑   定</string>
+    <string name="who">谁谁谁</string>
+    <string name="autograph">个性签名</string>
+    <string name="live_telecast">直播</string>
+    <string name="choose_image">选择图片</string>
+    <string name="unable_connect_network">无法连接到网络</string>
+    <string name="unable_connect_server">无法连接到服务器</string>
+    <string name="server_err">服务器异常</string>
+    <string name="net_connect_err">网络好像有点问题</string>
+    <string name="network_anomaly">出错啦!</string>
+    <string name="common_load_more_end">没有了</string>
+    <string name="wechat_packagename">com.tencent.mm</string>
+
+    <string name="wechat_notice">温馨提示</string>
+    <string name="wechat_not_install">您的设备没有安装微信</string>
+
+
+    <!-- loginAndregister -->
+    <string name="login">登录</string>
+    <string name="logging">登录中...</string>
+    <string name="user_not_exist">用户不存在</string>
+    <string name="password_error">密码错误</string>
+    <string name="register">注册</string>
+    <string name="in_register">注册中，请稍候...</string>
+    <string name="register_succeed">注册成功</string>
+    <string name="look_around">随便看看</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="user_name_input_hint">用户名/邮箱/手机</string>
+    <string name="password_input_hint">登录密码</string>
+    <string name="register_phone_numder">手机号码</string>
+    <string name="phone_already_been_register">手机号已注册</string>
+    <string name="phone_not_register">手机号未注册</string>
+    <string name="phone_already_been_register_hint">输入的手机号已经注册过，可直接登录</string>
+    <string name="phone_not_register_hint">输入的手机号未注册，可立即注册</string>
+    <string name="register_verify_code">验证码</string>
+    <string name="register_get_verify_code">获取验证码</string>
+    <string name="register_get_again_vcode">重新获取</string>
+    <string name="agreement">用户协议</string>
+    <string name="agreement_title1">一、总则</string>
+    <string name="agreement_content1">\t\t1.1 磨房社区www.doyouhike.net的所有权和运营权归深圳市载途科技有限公司所有。\n\n
+									  \t\t1.2 用户在使用本社区的服务之前，应当仔细阅读本协议，并同意遵守本协议及所有社区规则后方可成为磨房用户，一旦用户注册成功，则用户与本社区之间自动形成协议关系，用户应当受本协议及所有社区规则的约束。用户在使用特殊的服务或产品时，应当同意接受相关协议后方能使用。\n\n
+									  \t\t1.3 本协议、社区规则可由本社区随时更新，用户在使用磨房产品时应当及时关注，用户同意本社区不承担通知义务。本社区的通知、公告、声明或其它类似内容是本协议及社区规则的一部分。
+</string>
+    <string name="agreement_title2">二、服务内容 </string>
+    <string name="agreement_content2">\t\t2.1 本社区网络服务的具体内容由本社区根据实际情况提供，例如论坛、相册、圈子等。\n\n
+									  \t\t2.2 本社区仅提供相关的网络服务，除此之外与相关网络服务有关的设备(如个人电脑、手机、及其他与接入互联网或移动网有关的装置)及所需的费用(如为接入互联网而支付的电话费及上网费、为使用移动网而支付的手机费)均应由用户自行负担。
+</string>
+    <string name="agreement_title3">三、用户账号 </string>
+    <string name="agreement_content3">\t\t3.1 用户可通过以下方式注册成为磨房社区的正式用户：\n\n
+									  \t\t(1)经本社区会员系统完成注册程序并通过身份认证的用户；成为磨房正式用户即获得本社区规定用户所应享有的一切权限。磨房社区有权对会员的权限设计进行变更。\n\n
+									  \t\t3.2 用户帐号注册：\n\n
+									  \t\t(1)使用本社区会员系统注册的用户，只能使用汉字、英文字母、数字、下划线及它们的组合，禁止使用空格、各种符号和特殊字符。\n\n
+									  \t\t3.3 如发现用户帐号中含有不雅文字或不恰当名称的，本社区保留取消其用户资格的权利。\n\n
+									  \t\t(1)请勿以党和国家领导人或其他社会名人的真实姓名、字号、艺名、笔名注册；\n
+									  \t\t(2)请勿以国家机构或其他机构的名称注册；\n
+									  \t\t(3)请勿注册不文明、不健康名字，或包含歧视、侮辱、猥亵类词语的帐号；\n
+									  \t\t(4)请勿注册易产生歧义、引起他人误解或其它不符合法律规定的帐号。\n\n
+									  \t\t3.4 用户帐号的所有权归本社区，用户仅享有使用权。\n\n
+									  \t\t3.5 用户有义务保证密码和帐号的安全，用户利用该密码和帐号所进行的一切活动引起的任何损失或损害，由用户自行承担全部责任，本社区不承担任何责任。如用户发现帐号遭到未授权的使用或发生其他任何安全问题，应立即修改帐号密码并妥善保管，如有必要，请通知本社区。因黑客行为或用户的保管疏忽导致帐号非法使用，本社区不承担任何责任。
+</string>
+    <string name="agreement_title4">四、使用规则 </string>
+    <string name="agreement_content4">\t\t4.1 遵守中华人民共和国相关法律法规，包括但不限于《中华人民共和国计算机信息系统安全保护条例》、《计算机软件保护条例》、《最高人民法院关于审理涉及计算机网络著作权纠纷案件适用法律若干问题的解释(法释[2004]1号)》、《全国人大常委会关于维护互联网安全的决定》、《互联网电子公告服务管理规定》、《互联网新闻信息服务管理规定》、《互联网著作权行政保护办法》和《信息网络传播权保护条例》等有关计算机互联网规定和知识产权的法律和法规、实施办法。\n\n
+									  \t\t4.2 用户对其自行发表、上传或传送的内容负全部责任，所有用户不得在本社区任何页面发布、转载、传送含有下列内容之一的信息，否则本社区有权自行处理并不通知用户：\n\n
+									  \t\t(1)违反宪法确定的基本原则的；\n
+									  \t\t(2)危害国家安全，泄漏国家机密，颠覆国家政权，破坏国家统一的；\n
+									  \t\t(3)损害国家荣誉和利益的；\n
+									  \t\t(4)煽动民族仇恨、民族歧视，破坏民族团结的；\n
+									  \t\t(5)破坏国家宗教政策，宣扬邪教和封建迷信的；\n
+									  \t\t(6)散布谣言，扰乱社会秩序，破坏社会稳定的；\n
+									  \t\t(7)散布淫秽、色情、赌博、暴力、恐怖或者教唆犯罪的；\n
+									  \t\t(8)侮辱或者诽谤他人；\n
+									  \t\t(9)煽动非法集会、结社、游行、示威、聚众扰乱社会秩序的；\n
+									  \t\t(10)以非法民间组织名义活动的；\n
+									  \t\t(11)含有法律、行政法规禁止的其他内容的。\n
+									  \t\t(12)含有虚假、有害、胁迫、恐吓、侵害他人隐私、骚扰、中伤、粗俗、猥亵、种族歧视、地域歧视或其它道德上令人反感的内容。\n\n
+									  \t\t4.3 用户承诺对其发表或者上传于本社区的所有信息(即属于《中华人民共和国著作权法》规定的作品，包括但不限于文字、图片、音乐、电影、表演和录音录像制品和电脑程序等)均享有完整的知识产权，或者已经得到相关权利人的合法授权；如用户违反本条规定造成本社区被第三人索赔的，用户应全额补偿本社区一切费用(包括但不限于各种赔偿费、诉讼代理费及为此支出的其它合理费用)；\n\n
+									  \t\t4.4 当第三方认为用户发表或者上传于本社区的信息侵犯其权利，并根据《信息网络传播权保护条例》或者相关法律规定向本社区发送权利通知书时，用户同意本社区可以自行判断决定删除涉嫌侵权信息，除非用户提交书面证据材料排除侵权的可能性，本社区将不会自动恢复上述删除的信息；\n\n
+									  \t\t(1)不得为任何非法目的而使用网络服务系统；\n
+									  \t\t(2)遵守所有与网络服务有关的网络协议、规定和程序；\n
+									  \t\t(3)不得利用本社区服务进行任何不利于本社区的行为。\n\n
+									  \t\t4.5 如用户在使用网络服务时违反上述任何规定，本社区有权要求用户改正或直接采取一切必要的措施(包括但不限于删除用户张贴的内容、暂停或终止用户使用网络服务的权利)以减轻用户不当行为而造成的影响。 
+</string>
+
+    <string name="agreement_title5">五、隐私保护 </string>
+    <string name="agreement_content5">\t\t5.1 本社区不对外公开或向第三方提供单个用户的注册资料及用户在使用网络服务时存储在本社区的非公开内容，但下列情况除外：\n\n
+									  \t\t(1)事先获得用户的明确授权；\n
+									  \t\t(2)根据有关的法律法规要求；\n
+									  \t\t(3)按照相关政府主管部门的要求；\n
+									  \t\t(4)为维护社会公众的利益。
+</string>
+
+    <string name="agreement_title6">六、版权声明</string>
+    <string name="agreement_content6">\t\t6.1 用户发表在磨房网站上的内容，如果没有作者本人的特别声明，均使用知识共享 署名-非商业性使用-相同方式共享 2.5 许可协议。\n\n
+									  \t\t6.2 本社区特有的标识、版面设计、编排方式等版权均属本社区享有，未经本社区许可，不得任意复制或转载。\n\n
+									  \t\t6.3 用户从本社区的服务中获得的信息，未经本社区许可，不得任意复制或转载。\n\n
+									  \t\t6.4 使用本社区的任何内容均应注明"来源于磨房社区(www.doyouhike.net)"及署上作者姓名，按法律规定需要支付稿酬的，应当通知本社区及作者及支付稿酬，并独立承担一切法律责任。\n\n
+									  \t\t6.5 本社区享有所有作品用于其它用途的使用权和优先权，包括但不限于网站、电子杂志、平面出版等，作者在本社区发布内容时视为同意本条款。\n\n
+									  \t\t6.6 本社区所有内容仅代表作者自己的立场和观点，与本社区无关，由作者本人承担一切法律责任。\n\n
+									  \t\t6.7 恶意转载本社区内容的，本社区保留将其诉诸法律的权利。
+
+</string>
+
+    <string name="agreement_title7">七、责任声明 </string>
+    <string name="agreement_content7">\t\t7.1 用户明确同意其使用本社区网络服务所存在的风险及一切后果将完全由用户本人承担，本社区对此不承担任何责任。\n\n
+									  \t\t7.2 本社区无法保证网络服务一定能满足用户的要求，也不保证网络服务的及时性、安全性、准确性。\n\n
+									  \t\t7.3 本社区不保证为方便用户而设置的外部链接的准确性和完整性，同时，对于该等外部链接指向的不由本社区实际控制的任何网页上的内容，本社区不承担任何责任。\n\n
+									  \t\t7.4 对于因不可抗力或本社区不能控制的原因造成的网络服务中断或其它缺陷，本社区不承担任何责任，但将尽力减少因此而给用户造成的损失和影响。\n\n
+									  \t\t7.5 对于本社区向用户提供的下列产品或者服务的质量缺陷本身及其引发的任何损失，本社区无需承担任何责任：\n\n
+									  \t\t(1)本社区向用户免费提供的各项网络服务；\n
+									  \t\t(2)本社区向用户赠送的任何产品或者服务；\n\n
+									  \t\t7.6 本社区有权于任何时间暂时或永久修改或终止本服务(或其任何部分)，而无论其通知与否，本社区对用户和任何第三人均无需承担任何责任。
+</string>
+    <string name="agreement_title8">八、附则</string>
+    <string name="agreement_content8">\t\t8.1 本协议的订立、执行和解释及争议的解决均应适用中华人民共和国法律。\n\n
+									  \t\t8.2 如本协议中的任何条款无论因何种原因完全或部分无效或不具有执行力，本协议的其余条款仍应有效并且有约束力。\n\n
+									  \t\t8.3 本协议解释权及修订权归深圳市载途科技有限公司所有。
+</string>
+
+
+    <string name="finish_input">我输入好了</string>
+    <string name="register_user_name_input_hint">江湖人称</string>
+    <string name="register_user_name_input_warning">大侠，磨房规矩，名号确定了就不能改了</string>
+    <string name="register_user_name_confirm">我就叫这个</string>
+    <string name="register_user_name_too_short">名号再短也要有两个字</string>
+    <string name="register_user_name_too_long">名号有点太长了，最长二十个字</string>
+    <string name="register_input_new_password">输入你的新密码</string>
+    <string name="register_hint_if_phone_halt">提示：如果您的手机已停用，请登录磨房网，\n用E-mail找回密码</string>
+    <string name="register_bind_phone">绑定手机</string>
+    <string name="register_please_bind_phone">大侠，请绑定您的手机号码</string>
+    <string name="skip">跳过</string>
+    <string name="please_input_long_phone_number">请输入的手机号码大于11位</string>
+    <string name="please_input_short_phone_number">请输入的手机号码小于11位</string>
+    <string name="please_input_legitimate_password">请输入6-20位密码</string>
+
+    <string name="send_verify_code_failed">验证信息发送失败，请检查手机号码是否正确</string>
+
+    <string name="verifying">验证码校验中，请稍后...</string>
+    <string name="verify_code_is_wrong">验证码错误</string>
+    <string name="nickname_is_exist_try_other">昵称已存在，试试别的？</string>
+
+
+    <!-- follow -->
+    <string name="follow">关注</string>
+    <string name="following">已关注</string>
+    <string name="go_follow">前往关注</string>
+    <string name="cancel_follow">取消关注</string>
+    <string name="no_follow">暂时没有关注</string>
+    <string name="no_follow_hint">去发现更多有趣的人吧！</string>
+    <string name="follower">粉丝</string>
+    <string name="no_follower_me">暂时没有粉丝</string>
+    <string name="no_follower_hint_me">获得关注,从关注他人开始</string>
+
+    <string name="no_follower_other">没有任何人关注TA</string>
+    <string name="no_follower_hint_other">好可怜,给个关注吧</string>
+
+
+    <!-- live -->
+    <string name="home">动态</string>
+
+
+    <string name="four_space"></string>
+    <string name="day">天</string>
+    <string name="post_forwarding">发布的帖子</string>
+    <string name="post">贴子</string>
+    <string name="hot">热门</string>
+    <string name="search_user">搜索用户</string>
+    <string name="add_user">添加关注</string>
+    <string name="phone_adress_book">手机通讯录</string>
+    <string name="about_the_friends_of_phone_adress">关注手机通讯录中的好友</string>
+    <string name="recommend_attention">推荐关注</string>
+    <string name="repost">举报</string>
+    <string name="share_dialog_delete">删除</string>
+    <string name="sure_to_report">确认举报</string>
+    <string name="please_select_report_reason">请选择举报原因</string>
+    <string name="edit_event_tint">户外运动，通常大家会写：\n备用线路（下撤点）、活动强度、集合地点、行程计划、费用预算、装备要求、食品计划、风险提示等\n\n自助旅行，通常大家会写：\n\t【行程安排】包含交通方式、时间安排、景点等\n\t【预算】\n\t【自我介绍】可附上照片</string>
+
+    <string name="copying">抄袭内容</string>
+
+    <string name="invite_msg">我是%1$s，我在磨房，自助旅行和户外运动的出发地，下载：http://www.doyouhike.net/appdownload/mofangapp/download</string>
+    <string name="save_pic">保存图片</string>
+
+
+    <!-- action -->
+    <string name="action_search_nodata">没有找到相关内容</string>
+    <string name="action_attend">参加活动</string>
+    <string name="action_confirm">确认报名</string>
+    <string name="action_name">姓名</string>
+
+    <string name="action_phone">手机号码</string>
+    <string name="action_message">活动留言</string>
+    <string name="action_info">活动留言，请勿透漏个人资料</string>
+    <string name="action_insurance_info">保险资料</string>
+    <string name="action_insurance_mofang">磨房保险</string>
+    <string name="action_insurance_type">险种</string>
+    <string name="action_insurance_number">保单号</string>
+    <string name="action_mergency">紧急联系人</string>
+    <string name="action_knows">报名须知</string>
+    <string name="action_announce">我已阅读并同意声明</string>
+    <string name="action_notice">报名活动须知</string>
+    <string name="action_read">请认真阅读活动声明:</string>
+    <string name="action_search">搜索活动</string>
+
+    <string name="action_type">类型</string>
+
+    <string name="action_attend_number">参加人数</string>
+    <string name="action_select">筛选</string>
+
+    <string name="action_contact_phone">联系电话:</string>
+    <string name="action_emergency_contact_phone">紧急联系电话:</string>
+    <string name="action_insurance_number2">保险单号:</string>
+
+
+    <string name="action_share">分享</string>
+    <string name="action_weixin">微信好友</string>
+    <string name="action_friend">朋友圈</string>
+    <string name="action_weibo">新浪微博</string>
+    <string name="action_copy">复制链接</string>
+    <string name="action_qq">QQ</string>
+    <string name="action_qzone">QQ空间</string>
+
+
+    <string name="action_select_city">出发地</string>
+    <string name="action_already_confirm">已确认</string>
+    <string name="action_not_confirm">未确认</string>
+    <string name="action_do_like">赞一下，看看会发生什么</string>
+    <string name="action_no_result">没有找到相关活动</string>
+    <string name="action_webview">帖子内容</string>
+    <string name="official_wechat_insurance">mflvxing</string>
+    <string name="action_must_write">必填</string>
+    <string name="action_choose_write">可不填</string>
+    <string name="action_leader_see">以下信息仅活动发起人和协作可见</string>
+
+    <!-- post -->
+    <string name="send">发送</string>
+    <string name="forward">转发</string>
+    <string name="forward_with_comment">同时转发</string>
+    <string name="select_tag_which_you_want">选择你想要的标签</string>
+    <string name="add_tag">添加标签</string>
+
+    <!-- me -->
+    <string name="me">我的</string>
+    <string name="nickname">昵称</string>
+    <string name="favorite">收藏</string>
+    <string name="cancel_favorite">取消收藏</string>
+    <string name="crop_image">裁剪照片</string>
+    <string name="choose">选择</string>
+    <string name="upload_hrad_image_toast">正在为您上传头像,请稍后...</string>
+
+    <!-- message -->
+    <string name="message_title">消息</string>
+    <string name="no_message">暂无消息</string>
+    <string name="set_push_msg_fail">设置接收消息推送失败</string>
+    <string name="no_comment_hint">先去评论别人</string>
+    <string name="no_like_hint">先去赞赞别人</string>
+    <string name="no_action_hint">可在磨房网（doyouhike.net）发起活动约伴</string>
+    <string name="go_to_new">前往热门</string>
+    <string name="comment_for_you">评论了你</string>
+    <string name="msg_commenter_original_hint"> 这里应该是原直播的内容，文字，或者是图片</string>
+    <string name="msg_commenter_content_hint">这里是本篇评论的主要内容，如果是回复的话，会在开头加入“回复@谁谁谁：”之后才是内容</string>
+    <string name="liked_title">赞</string>
+    <string name="like_for_you">赞了你</string>
+    <string name="join_the_action">参加</string>
+    <string name="join_action">参加的活动</string>
+    <string name="action_confirmed">已被确认</string>
+    <string name="action_cancel">活动取消</string>
+    <string name="elapsed_time_hint">x分钟前</string>
+    <string name="action_title_hint">活动标题</string>
+    <string name="action_verification_text_hint">这里是参加活动请求时填写的验证信息</string>
+    <string name="cancel_member">删除成员</string>
+    <string name="bell_setting_title">通知</string>
+    <string name="bell_setting_text">接收推送通知</string>
+    <string name="bell_setting_explain">关于通知推送设置的说明</string>
+    <string name="bell_setting_explain_comment">打开或关闭“评价”的通知推送功能</string>
+    <string name="bell_setting_explain_liked">打开或关闭“赞”的通知推送功能</string>
+    <string name="bell_setting_explain_action">打开或关闭“活动”的通知推送功能</string>
+    <string name="bell_setting_explain_follow">打开或关闭“关注”的通知推送功能</string>
+    <string name="content_is_delete">内容已被删除</string>
+    <string name="comment_is_delete">该评论已被删除</string>
+
+    <!-- setting -->
+    <string name="setting">设置</string>
+    <string name="personal_message_title">个人信息</string>
+    <string name="input_new_nickname">请输入新昵称</string>
+    <string name="nickname_is_exist">昵称已存在</string>
+    <string name="nickname_is_exist_hint">此昵称已被使用，试试别的昵称吧</string>
+    <string name="re_input">重新输入</string>
+    <string name="gender">性别</string>
+    <string name="gender_boy">男</string>
+    <string name="gender_girl">女</string>
+    <string name="gender_unkown">不明</string>
+    <string name="phone_number">手机号</string>
+    <string name="bind_number">绑定手机号</string>
+    <string name="phone_hint_now">当前手机号</string>
+    <string name="phone_hint_unbind">以后可用此手机号直接登录</string>
+    <string name="phone_hint_input">手机号码</string>
+    <string name="wait_for_send_vcode">正在为您处理，请稍后...</string>
+    <string name="phone_is_bangding">该号码已经绑定</string>
+    <string name="city">城市</string>
+    <string name="city_hint">未设置城市</string>
+    <string name="profile_title">个人说明</string>
+    <string name="add_tags">添加标签</string>
+    <string name="add_location">添加地点</string>
+    <string name="search_activity">搜索</string>
+    <string name="search_near_location">搜索附近的地点</string>
+    <string name="near_location">附近地点</string>
+    <string name="can_t_get_your_location">无法获取你的位置信息</string>
+    <string name="suggest_open_location_1">建议开启定位服务(设置>隐私>定位</string>
+    <string name="suggest_open_location_2">服务>开启磨房定位服务</string>
+    <string name="open_location">开启定位</string>
+    <string name="change_passwrod">修改密码</string>
+    <string name="change_passwrod_confirm">确认修改</string>
+    <string name="old_password">原密码</string>
+    <string name="old_password_hint">输入现有密码</string>
+    <string name="new_password">新密码</string>
+    <string name="new_password_hint">6~20位</string>
+    <string name="new_passwrod_confirm">确认密码</string>
+    <string name="new_passwrod_confirm_hint">再次输入新密码</string>
+    <string name="please_make_new_password_correct">两次输入密码不一致</string>
+    <string name="old_password_fail">原密码不正确</string>
+    <string name="bell_setting">接收推送通知</string>
+    <string name="bell_setting_tip">打开将收到通知提醒，如通知过多造成骚扰，可关闭相关的提醒。</string>
+    <string name="wipe_cache_partition">清理缓存</string>
+    <string name="cache_mb">MB</string>
+    <string name="cache_zero_mb">已经很干净了~</string>
+    <string name="total_count_wipe_cache">一共清除缓存文件</string>
+    <string name="total_size_wipe_cache">个,\n大小合共：</string>
+    <string name="feedback_suggest">反馈建议</string>
+    <string name="feedback_success">提交成功，感谢你的反馈</string>
+    <string name="feedback_fail">反馈失败：无法连接到网络</string>
+    <string name="want_to_say_to_us">想到我们说点什么？</string>
+    <string name="about_mofang">关于磨房</string>
+    <string name="about_mofang_message">2000年成立于深圳，15年来，磨房从一个简单的讨论版发展成一个论坛、圈子、活动约伴、目的地推荐的综合户外平台。磨房一直坚持“安全、环保、自助”的理念，倡导人与自然的和谐，人与人的平等互助，鼓励人们以不同方式去探寻世界。</string>
+    <string name="time_machine">磨房时光机</string>
+    <string name="official_wechat">官方微信</string>
+    <string name="official_wechat_account">mofangweixin</string>
+    <string name="copy_wechat_title">已复制微信号</string>
+    <string name="copy_wechat_hint">可打开微信粘贴至搜索框</string>
+    <string name="open_wechat_to_search">打开微信</string>
+    <string name="open_wechat_fail">无法打开微信</string>
+    <string name="official_phone">联系电话</string>
+    <string name="official_phone_number">400-600-999-1</string>
+    <string name="official_mailbox">联系邮箱</string>
+    <string name="official_mailbox_number">service@doyouhike.net</string>
+    <string name="version">V2.1 版本</string>
+    <string name="log_out">退出登录</string>
+    <string name="confirm_quit">退出</string>
+
+
+    <!-- toast -->
+    <string name="please_to_login">请登录，否则无法使用该功能</string>
+    <string name="click_look_origin_pic">点击查看完整图片</string>
+    <string name="change_password_succeed">密码修改成功</string>
+    <string name="bind_phone_succeed">绑定号码成功</string>
+
+    <!-- 下拉刷新，上拉加载 -->
+    <string name="refresh">刷新</string>
+    <string name="load">加载</string>
+
+
+    <string name="live_detail">正文</string>
+    <string name="feel_favourite">觉得赞</string>
+    <string name="all_comments">所有评论</string>
+
+
+    <string name="favorite_success">收藏成功</string>
+    <string name="release_action">发布的活动</string>
+    <string name="release_pic">发布的图片</string>
+    <string name="release_post">发布的帖子</string>
+    <string name="invite">邀请</string>
+    <string name="no_result">无结果</string>
+    <string name="no_these_user">没有找到相关用户</string>
+    <string name="search_result">搜索结果</string>
+    <string name="search_content_can_t_null">搜索内容不能为空</string>
+    <string name="mo_fang_">磨房：</string>
+    <string name="giveup">放弃</string>
+    <string name="temp_save">临时保存</string>
+    <string name="can_t_more_than_3">最多可选3个标签</string>
+
+    <string name="can_t_more_9_pics">最多选择9张图片</string>
+
+    <string name="thousand">千</string>
+    <string name="search_near">搜索附近地点</string>
+    <string name="no_find_this_result">附近没有找到此地点</string>
+
+    <!-- 角色 -->
+    <string name="please_wait_location_finish">请等待定位完毕</string>
+    <string name="search_near_fail">搜索附近失败</string>
+    <string name="location_fail">定位失败</string>
+    <string name="reply">回复</string>
+    <string name="app_error">程序异常</string>
+    <string name="content_is_null_can_t_send">内容为空，不能发送</string>
+    <string name="delete_success">删除成功</string>
+    <string name="server_busy">服务器繁忙，请稍后再试</string>
+    <string name="sorry_this_is_deleted_by_author">抱歉，此内容已被作者删除</string>
+    <string name="content_has_been_deleted">原内容已被删除</string>
+    <string name="doyouhike_share_title">磨房，自助旅行和户外运动的出发地</string>
+    <string name="try_to_click_refresh">可尝试点按刷新</string>
+    <string name="temporary_no_content">暂无内容</string>
+    <string name="try_to_attend_more_people">关注更多的人试试</string>
+    <string name="network_maybe_has_some_question">网络好像有点问题</string>
+    <string name="sending">发送中...</string>
+    <string name="comment_sending">发布中...</string>
+    <string name="comment_send">发布</string>
+    <string name="send_live_fail_tip">发送失败，点按可编辑重试</string>
+    <string name="send_fail_for_unqualified">发送失败，可能包涵违法信息</string>
+    <string name="try_again">编辑</string>
+    <string name="try_again_or_delete">可编辑后重试</string>
+    <string name="app_error_click_back">程序异常，点击返回</string>
+    <string name="back">返回</string>
+    <string name="canceling_favorite">正在取消收藏...</string>
+    <string name="favouriting">收藏中...</string>
+    <string name="sending_last_please_to_wait">正在发送上一条，请稍候...</string>
+    <string name="have_not_more_live">没有更多的直播</string>
+    <string name="copy_success_can_to_share">复制成功，可粘贴分享</string>
+    <string name="get_share_url_fail">获取分享地址失败</string>
+    <string name="permission_to_read_contact">请允许磨房访问您的通讯录</string>
+    <string name="success">成功</string>
+    <string name="fail">失败</string>
+    <string name="delete_live_fail">网络好像有点问题，删除直播失败</string>
+    <string name="phone_is_null">通讯录为空</string>
+    <string name="your_phone_contacts_is_null">您的通讯录没有联系人或无法获取您的联系人信息</string>
+    <string name="save_to_gallery">保存成功</string>
+    <string name="save_fail_check_stoge">保存失败，请检查手机存储空间是否充足</string>
+    <string name="network_has_problem_attend_fail">网络好像好点问题，关注失败</string>
+    <string name="network_has_problem_cancel_attend_fail">网络好像好点问题，取消关注失败</string>
+    <string name="do_the_first_to_comment">来做第一个评论的人?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_home_tag">编辑订阅</string>
+    <string name="title_activity_webview">网页</string>
+    <string name="title_activity_with_more">更多</string>
+    <string name="title_activity_with_template">文字模板</string>
+    <string name="with_template_attention">1. 认同“安全、环保、自助”的磨房户外理念。遵从《磨房告示》户外活动规则。\n\n2. 服从统一指挥，发扬团队协作精神，倡导自助与必要的互助相结合的户外理念。不擅自离开活动路线。\n\n3. 注意安全，不作无保护、无必要的攀爬、冒险。注意保持队伍行进紧凑，严防迷路和被打劫。\n\n4. 不乱丢垃圾，不破坏植被。注意环保，鼓励拾捡垃圾。做到“只留下你的脚印，只带走你的回忆”。\n\n5. 自行购买保险。出发前请把组织人的联系方式留给紧急联系人。\n\n6. 如果在活动中遇到异常情况，领队有权决定修改线路。\n</string>
+    <string name="with_template_disclaimer">1. 活动具有一定的风险性，凡报名参加者均视为具有完全民事行为能力人，参加者应根据自身的状况作出是否参加活动的决定，并应对自己的安全负完全责任。 凡报名者均视为已接受放弃损害赔偿 。\n\n2. 参加活动往返交通途中和活动中如果发生意外事故，组织者有义务组织救援，但对于事故造成的身体损害，乃至不可逆转的永久性身体损伤、后遗症等，以及事件伴随的经济损失，组织者不承担任何法律和经济责任。\n\n3. 一旦报名，即视为参加者（包括代他人报名者，被代报名参加者）已经充分了解并自愿接受本免责条款，本免责条款自动生效。否则，请终止报名参加，已报名的参加者请在活动开始前退出本次活动。\n</string>
+
+
+    <string name="yueban">约伴编辑</string>
+    <string name="action_detail">活动详情</string>
+    <string name="event_end_location">约伴目的地</string>
+    <string name="release">发布</string>
+    <string name="edit_server_url_activity_label">服务器Url编辑</string>
+    <string name="privacy_avtivity_label">设置隐私</string>
+    <string name="popup_menu_release_live">直播</string>
+    <string name="popup_menu_release_event">约伴</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action_over">已结束</string>
+    <string name="to_search_activity_search_user">搜索用户</string>
+    <string name="live_search_destination">搜索目的地、线路</string>
+    <string name="event_search_destination">搜索目的地</string>
+    <string name="forwarding_dialog_success">转发成功</string>
+    <string name="forwarding_dialog_error">转发成功</string>
+    <string name="forwarding_dialog_title">转发到动态</string>
+    <string name="forwarding_dialog_hint">有什么感想...</string>
+    <string name="snack_release_edit_event_ok">约伴编辑成功</string>
+    <string name="snack_release_edit_event_fail">约伴编辑失败</string>
+    <string name="snack_release_ok">发布成功</string>
+    <string name="snack_release_fail">发布失败</string>
+    <string name="report_act_succuss">你的举报已经提交</string>
+    <string name="report_act_fail">无法举报,请检查网络后重试</string>
+    <string name="release_success">发布成功</string>
+    <string name="check_network">请检查网络后重试</string>
+    <string name="live_send_fail">发送失败</string>
+    <string name="forward_ok">已转发</string>
+    <string name="forward_blocklist">转发失败，可能包含违法信息！</string>
+    <string name="account_freeze">账号被冻结，有疑问请联系磨房网</string>
+    <string name="release_over_count">发布次数超限制，请稍后再试</string>
+
+    <!--环信聊天-->
+    <string name="at_your_in_group">%s在群聊中@了你</string>
+    <string name="next_step">下一步</string>
+    <string name="action_real_name">真实姓名:</string>
+    <string name="item_action_mergency">紧急联系人:</string>
+
+</resources>

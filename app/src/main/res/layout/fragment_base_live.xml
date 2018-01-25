@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout
+        android:id="@+id/rf_drop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <net.doyouhike.app.bbs.ui.widget.LoadMoreListView
+            android:id="@+id/lv_home_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_background"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:fadingEdge="none"
+            android:fadingEdgeLength="0dp"
+            android:listSelector="@android:color/transparent"
+            android:overScrollMode="never" />
+    </net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout>
+</LinearLayout>

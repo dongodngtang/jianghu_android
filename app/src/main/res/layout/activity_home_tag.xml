@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_less"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.home.tag.HomeTagActivity">
+
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/activity_home_tag_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/roll_back"
+        app:m_title="@string/title_activity_home_tag"
+        app:right_text="保存"/>
+
+    <net.doyouhike.app.bbs.ui.widget.common.dslv.DragSortListView
+        android:id="@+id/lv_act_home_tag_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="1px"
+        app:drag_enabled="true"
+        app:float_alpha="0.6"
+        app:use_default_controller="false" />
+</LinearLayout>

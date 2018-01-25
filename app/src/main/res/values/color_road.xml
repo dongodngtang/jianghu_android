@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 线路 -->
+    <color name="text_road_detail_jianjie">#42000000</color>
+    <color name="text_road_detial_more">#FF4081</color>
+    <color name="text_road_detial_more_content">#8A000000</color>
+    <color name="text_road_list_dailog_selected">#FFFF7510</color>
+
+    <color name="text_road_list_city_selected">#FF48ADA0</color>
+    <color name="bg_road_detail_map_line">#FF7510</color>
+
+</resources>

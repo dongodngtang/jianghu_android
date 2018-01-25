@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/sv_road_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <com.amap.api.maps2d.MapView
+                android:id="@+id/mv_road_detail_map"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"></com.amap.api.maps2d.MapView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="13dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_road_detail_roadName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_black_color_default"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tv_road_detail_road_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="17dp"
+                    android:background="#FFD2DFDB"
+                    android:padding="3dp"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_road_detail_jianjie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="简介"
+                        android:textColor="@color/text_road_detail_jianjie"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_intro_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_setting_item"
+                            android:textColor="@color/txt_light_content_54"
+                            android:textColorLink="@color/txt_web_link_common_light"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_intro_content_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/txt_light_content_54"
+                            android:textColorLink="@color/txt_web_link_common_light"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/tv_intro_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|bottom"
+                            android:background="@android:color/transparent"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="更多"
+                            android:visibility="gone"
+                            android:textColor="#FF48ADA0"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/bg_common_color" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_road_detail_tishi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重要提示"
+                        android:textColor="@color/text_road_detail_jianjie"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_tip_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/selector_setting_item"
+                            android:textColor="@color/txt_light_content_54"
+                            android:textColorLink="@color/txt_web_link_common_light"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_tip_content_all"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/txt_light_content_54"
+                            android:textColorLink="@color/txt_web_link_common_light"
+                            android:textSize="15sp"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            android:id="@+id/tv_tip_more"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left|bottom"
+                            android:background="@android:color/transparent"
+                            android:paddingRight="10dp"
+                            android:paddingTop="10dp"
+                            android:text="更多"
+                            android:visibility="gone"
+                            android:textColor="#FF48ADA0"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="14dp"
+                        android:background="@color/bg_common_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="信息"
+                    android:textColor="@color/text_road_detail_jianjie"
+                    android:textSize="14sp" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="left|center"
+                    android:shrinkColumns="1">
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="所属类型"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_distance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="线路里程"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_difficult_leve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="线路难度"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_difficult_leve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_best_season"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="最佳季节"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_best_season"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_time_need"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="活动时长"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_time_need"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_camp_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="营位数量"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_camp_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_special_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="特色标签"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_special_tag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_buliding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="营地设施"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_buliding"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_line_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="线路行程"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_line_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tr_road_detail_tranport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="84dp"
+                            android:layout_height="wrap_content"
+                            android:text="交通位置"
+                            android:textColor="@color/text_road_detial_more_content"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_road_detail_tranport"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_black_color_default"
+                            android:textSize="14sp" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_road_detail_top_back">
+
+        <LinearLayout
+            android:id="@+id/rl_road_detail_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:layout_width="9dp"
+                android:layout_height="18dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_road_detail_return" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="返回"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

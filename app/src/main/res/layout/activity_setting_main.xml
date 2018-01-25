@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/roll_back"
+        app:m_title="@string/setting" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- 第一块 -->
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_change_password"
+                    style="@style/lay_setting_main_item">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_divider" />
+
+                    <TextView
+                        style="@style/txt_setting_main_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/change_passwrod" />
+
+                    <ImageView style="@style/vi_setting_main_item_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_privacy_setting"
+                    style="@style/lay_setting_main_item">
+
+                    <TextView
+                        style="@style/txt_setting_main_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="隐私" />
+
+                    <ImageView style="@style/vi_setting_main_item_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!-- 通知设置 -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFFFF"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_seetting_bell"
+                    style="@style/lay_setting_main_item">
+
+                    <TextView
+                        style="@style/txt_setting_main_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/bell_setting_title" />
+
+                    <ImageView style="@style/vi_setting_main_item_arrow" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_divider" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 清理缓存 -->
+
+
+            <RelativeLayout
+                android:id="@+id/rlyt_wipe_cache"
+                style="@style/lay_setting_main_item">
+
+                <TextView
+                    style="@style/txt_setting_main_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/wipe_cache_partition" />
+
+                <TextView
+                    android:id="@+id/tv_cache"
+                    style="@style/txt_setting_main_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/cache_mb"
+                    android:textColor="@color/gray_word" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color_divider" />
+            </RelativeLayout>
+            <!-- 检查更新 -->
+
+
+            <RelativeLayout
+                android:id="@+id/rlyt_wipe_update"
+                style="@style/lay_setting_main_item">
+
+                <TextView
+                    style="@style/txt_setting_main_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="检查更新" />
+
+                <View
+                    android:id="@+id/iv_app_update_indicate"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="14dp"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_message_circle_red" />
+            </RelativeLayout>
+
+            <!-- 其他 -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#FFFFFFFF"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_feedback_suggest"
+                    style="@style/lay_setting_main_item">
+
+                    <TextView
+                        style="@style/txt_setting_main_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/feedback_suggest" />
+
+
+
+                    <ImageView style="@style/vi_setting_main_item_arrow" />
+
+                    <View
+                        android:id="@+id/iv_feedback_indicate"
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14dp"
+                        android:visibility="gone"
+                        android:background="@drawable/bg_message_circle_red" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_divider" />
+                </RelativeLayout>
+
+                <!-- 去 app_store 评论
+                <RelativeLayout
+                    android:id="@+id/rlyt_goto_app_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/selector_setting_item"
+                    android:paddingLeft="17dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/goto_app_store"
+                        android:textColor="@color/black_word"
+                        android:textSize="19sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.6dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/color_divider" />
+                </RelativeLayout> -->
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_about_mofang"
+                    style="@style/lay_setting_main_item">
+
+                    <TextView
+                        style="@style/txt_setting_main_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:text="@string/about_mofang" />
+
+                    <ImageView style="@style/vi_setting_main_item_arrow" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <!-- 退出登陆 -->
+
+            <TextView
+                android:id="@+id/tv_log_out"
+                style="@style/lay_setting_main_item"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/selector_list_item_bg"
+                android:gravity="center"
+                android:text="@string/log_out"
+                android:textColor="@color/orange_word"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- 退出登陆
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/color_divider" />
+
+            <TextView
+                android:id="@+id/tv_log_out"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_setting_item"
+                android:gravity="center"
+                android:text="@string/log_out"
+                android:textColor="@color/orange_word"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/color_divider" />
+        </LinearLayout>  -->
+    </RelativeLayout>
+
+</LinearLayout>

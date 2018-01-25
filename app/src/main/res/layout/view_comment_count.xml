@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llyt_favourite_avatars"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@drawable/shape_favours_avatar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <HorizontalScrollView
+            android:id="@+id/hsv_like_avatars"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="11dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llyt_like_avatars"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv_not_like_avatars"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/action_do_like"
+            android:textColor="#BFBFBF"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_like_count"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/shape_favourite_avatar_count"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#BFBFBF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="17dp"
+            android:text="@string/feel_favourite"
+            android:textColor="#BFBFBF"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_count"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/shape_all_comments_text"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/all_comments"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

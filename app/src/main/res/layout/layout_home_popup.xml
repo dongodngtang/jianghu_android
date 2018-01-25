@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_action_event_types"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F000000">
+
+    <RelativeLayout
+        android:id="@+id/vi_lay_home_tag_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="333dp"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/vi_lay_home_tag_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white">
+
+            <ListView
+                android:id="@+id/lv_lay_home_popup_items"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:descendantFocusability="blocksDescendants"
+                android:divider="@android:color/transparent"
+                android:listSelector="@android:color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/vi_lay_home_tag_edit_parent"
+                android:layout_height="50dp"
+                android:paddingBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/btn_lay_home_tag_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_home_pop_btn_bule"
+                    android:gravity="center"
+                    android:text="编辑订阅"
+                    android:textColor="@color/blue_word"
+                    android:textSize="@dimen/home_popup_txt_site" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

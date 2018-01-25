@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_network_anomaly"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_network_anomaly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_404_3x" />
+
+    <TextView
+        android:id="@+id/tv_network_anomaly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/network_anomaly"
+        android:textColor="#FF404040"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_error_ui_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="@string/try_to_click_refresh"
+        android:textColor="#BFBFBF"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/btn_network_anomaly"
+        android:layout_width="142dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="44dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:background="@drawable/selector_btn_retry_bg"
+        android:text="@string/refresh"
+        android:textColor="@color/clickable"
+        android:textSize="17sp" />
+
+</LinearLayout>

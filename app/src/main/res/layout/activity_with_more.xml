@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg_less"
+    android:orientation="vertical"
+    android:id="@+id/ll_with_more">
+
+
+    <EditText
+        android:id="@+id/tv_act_with_more_destination"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/with_more_content_height"
+        android:layout_marginTop="1dp"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/with_more_margin_horizontal"
+        android:paddingRight="@dimen/with_more_margin_horizontal"
+        android:textColor="@color/text_black_color_default"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/ll_limit_num"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/with_more_content_height"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:paddingLeft="@dimen/with_more_margin_horizontal"
+        android:paddingRight="@dimen/with_more_margin_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="人数限制"
+            android:textColor="#8A000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_act_with_num_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="16"
+            android:textColor="@color/text_black_color_default"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <net.doyouhike.app.bbs.ui.widget.action.RichTextEditor
+            android:id="@+id/edt_act_with_template"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/with_more_margin_vertical"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:gravity="top|left"
+            android:hint="@string/edit_event_tint"
+            android:paddingTop="@dimen/with_more_margin_horizontal"
+            android:paddingLeft="@dimen/with_more_margin_horizontal"
+            android:paddingRight="@dimen/with_more_margin_horizontal"
+            android:textColorHint="@color/txt_light_tip_26"
+            android:textSize="@dimen/with_more_content_txt_size" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/with_more_content_height"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/with_more_margin_horizontal"
+            android:paddingRight="@dimen/with_more_margin_horizontal">
+
+            <LinearLayout
+                android:id="@+id/btn_act_with_add_template"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="19dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/post_yue_more_addtext" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:drawablePadding="@dimen/with_more_margin_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="常用"
+                    android:textColor="@color/text_action_detail_more_template"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btn_act_with_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="23dp"
+                    android:layout_height="19dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/post_yue_more_addpic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:drawablePadding="@dimen/with_more_margin_horizontal"
+                    android:gravity="center_vertical"
+                    android:text="图片"
+                    android:textColor="@color/text_action_detail_more_template"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

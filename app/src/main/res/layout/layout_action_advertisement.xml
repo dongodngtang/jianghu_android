@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/iv_frag_action_ad"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_common_color"
+    android:orientation="vertical">
+
+    <net.doyouhike.app.bbs.ui.widget.action.InterceptScrollViewPager
+        android:id="@+id/fragment_action_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </net.doyouhike.app.bbs.ui.widget.action.InterceptScrollViewPager>
+
+</LinearLayout>

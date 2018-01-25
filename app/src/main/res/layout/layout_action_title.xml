@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_action_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_44dp">
+
+    <View
+        android:id="@+id/v_action_title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_theme" />
+
+    <RelativeLayout
+        android:id="@+id/rl_action_title_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/selector_action_list_title_location_bg"
+        android:minHeight="24dp"
+        android:minWidth="55dp"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/iv_action_title_location"
+            android:layout_width="13dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:src="@drawable/selector_action_list_title_location_small" />
+
+        <TextView
+            android:id="@+id/tv_action_title_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_action_title_location"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="其他"
+            android:textColor="@color/txt_action_title_location"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <FrameLayout
+        android:id="@+id/fl_action_title_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/selector_action_list_title_search_bg">
+
+        <ImageView
+            android:id="@+id/iv_action_title_search"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/selector_search_icon" />
+    </FrameLayout>
+</RelativeLayout>

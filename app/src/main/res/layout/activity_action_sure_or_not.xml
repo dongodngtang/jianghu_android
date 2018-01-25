@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fdfdfd" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_joined"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/action_already_confirm"
+                android:textColor="#49a4e9"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_join"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:alpha="0.5"
+                android:gravity="center"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="@string/action_not_confirm"
+                android:textColor="#49a4e9"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="9dp"
+            android:onClick="rollBack"
+            android:padding="8dp"
+            android:src="@drawable/ic_back_3x" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF" >
+
+        <RelativeLayout
+            android:id="@+id/rlyt_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF"
+            android:visibility="gone" >
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lv_action_manager_joined"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="#CCCCCC"
+                ptr:ptrMode="both" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/lv_action_manager_join"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                ptr:ptrAnimationStyle="rotate"
+                ptr:ptrHeaderTextColor="#CCCCCC"
+                ptr:ptrMode="both" >
+            </com.handmark.pulltorefresh.library.PullToRefreshListView>
+        </RelativeLayout>
+
+        <include layout="@layout/widget_login" />
+
+        <include layout="@layout/widget_network_anomaly" />
+    </RelativeLayout>
+
+</LinearLayout>

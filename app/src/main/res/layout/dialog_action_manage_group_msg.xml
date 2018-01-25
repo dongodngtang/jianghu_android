@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000">
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true">-->
+
+        <LinearLayout
+            android:layout_width="319dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_action_manage_group_msg_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:padding="14dp"
+                    android:text="取消"
+                    android:textColor="@color/txt_button_common_light" />
+
+                <TextView
+                    android:id="@+id/tv_action_manage_group_msg_done"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="14dp"
+                    android:text="完成"
+                    android:enabled="false"
+                    android:textColor="@color/txt_button_common_light" />
+
+                <TextView
+                    android:id="@+id/tv_action_manage_group_msg_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:clickable="true"
+                    android:padding="14dp"
+                    android:text="确认(1)"
+                    android:textColor="@color/txt_light_tip_26" />
+            </RelativeLayout>
+
+            <include layout="@layout/widget_gray_separator" />
+
+            <EditText
+                android:background="@android:color/white"
+                android:id="@+id/edt_action_manage_group_msg_content"
+                android:layout_width="match_parent"
+                android:layout_height="155dp"
+                android:maxLength="500"
+                android:gravity="left|top"
+                android:hint="写一个通知..."
+                android:padding="14dp"
+                android:textColorHint="@color/txt_light_tip_26"
+                android:textSize="14sp" />
+        </LinearLayout>
+    <!--</ScrollView>-->
+</RelativeLayout>

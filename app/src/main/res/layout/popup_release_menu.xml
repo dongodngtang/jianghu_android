@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/color_theme"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_popup_live"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_common_color_change"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/post_icon_live" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="18dp"
+                android:text="@string/popup_menu_release_live"
+                android:textColor="@color/txt_title_dark_standard"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:background="#42FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_popup_event"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_common_color_change"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/post_icon_appointment" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:text="@string/popup_menu_release_event"
+            android:textColor="@color/txt_title_dark_standard"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_theme"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <net.doyouhike.app.bbs.ui.widget.action.XEditText
+            android:id="@+id/et_activityKeyWord"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_search_bg"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:hint="@string/search_activity"
+            android:imeOptions="actionSearch"
+            android:padding="7dp"
+            android:singleLine="true"
+            android:textColor="@color/txt_dark_content"
+            android:textColorHint="@color/txt_dark_remark"
+            android:drawablePadding="7dp"
+            android:textCursorDrawable="@drawable/shape_search_cursor"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="@string/cancel"
+            android:textColor="@color/txt_button_common_dark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@android:color/white">
+
+        <LinearLayout
+            android:id="@+id/ll_activity_action_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="活动"
+                android:textSize="@dimen/txt_activity_sub_title" />
+
+            <View
+                android:id="@+id/vi_activity_action_search_indicate"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/searchbar_action_road_indicate_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_activity_road_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="线路"
+                android:textSize="@dimen/txt_activity_sub_title" />
+
+            <View
+                android:id="@+id/vi_activity_road_search_indicate"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/searchbar_action_road_indicate_selector" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_road_search" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_activity_action_road_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false" />
+
+</LinearLayout>

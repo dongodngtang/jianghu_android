@@ -1,0 +1,15 @@
+<resources>
+
+    <!--活动相关-->
+    <string name="string_action_research_type">全部类型</string>
+    <string name="string_action_research_go_soon">即将出发</string>
+    <string name="string_action_research_friend_join">好友参加</string>
+
+    <string name="string_action_detail_zan">赞</string>
+    <string name="string_action_detail_edit">编辑</string>
+    <string name="string_action_detail_dis">讨论</string>
+    <string name="string_action_detail_exit">退出</string>
+    <string name="string_action_detail_manager">管理</string>
+
+
+</resources>

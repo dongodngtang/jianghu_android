@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.doyouhike.app.bbs.ui.fragment.ListFragment">
+
+
+    <LinearLayout
+        android:id="@+id/ll_action_manage_comfirmed_group_msg"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <include layout="@layout/widget_gray_separator"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/selector_group_msg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:textSize="10dp"
+            android:textColor="@color/txt_light_tip_26"
+            android:text="群发" />
+
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_loadmore_listview"
+        android:layout_above="@id/ll_action_manage_comfirmed_group_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrHeaderTextColor="#CCCCCC"
+        ptr:ptrMode="both"/>
+</RelativeLayout>

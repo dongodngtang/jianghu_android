@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/title_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/setting"
+        app:m_title="隐私" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#FFFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="通过手机号找到我"
+            android:textColor="@color/setting_item_title"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_privacy_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFFFF">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="发布约伴在附近显示"
+            android:textColor="@color/setting_item_title"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/sc_privacy_near"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="关闭后,附近的人将不可通过位置找到你的约伴"
+        android:textColor="@color/text_gray"
+        android:textSize="14sp"
+        android:visibility="gone"/>
+</LinearLayout>

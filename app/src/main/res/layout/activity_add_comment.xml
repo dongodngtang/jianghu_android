@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="net.doyouhike.app.bbs.ui.activity.AddCommentActivity">
+
+    <!-- 顶部栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/color_theme">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:ems="10"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="写评论"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="14dp"
+            android:enabled="false"
+            android:text="@string/comment_send"
+            android:textColor="@color/txt_title_right"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_text_count"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:minWidth="22dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/tv_send"
+            android:background="@drawable/txt_input_range_indicate"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:textColor="@color/txt_input_range_indicate"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/title_left_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_back_3x" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/txt_title_right"
+                android:textSize="@dimen/txt_title_small" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/edt_activity_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:gravity="top|left"
+        android:hint="在此输入评论"
+        android:paddingTop="@dimen/with_more_margin_horizontal"
+        android:paddingLeft="@dimen/with_more_margin_horizontal"
+        android:paddingRight="@dimen/with_more_margin_horizontal"
+        android:textColorHint="#42000000"
+        android:textSize="@dimen/with_more_content_txt_size" />
+</LinearLayout>

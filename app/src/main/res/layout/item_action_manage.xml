@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/riv_action_manager_head"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/none_header" />
+
+        <ImageView
+            android:id="@+id/iv_action_manager_sex"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_alignTop="@id/riv_action_manager_head"
+            android:layout_marginLeft="44dp"
+            android:src="@drawable/ic_me_male_3x" />
+
+
+        <TextView
+            android:id="@+id/btn_action_manager_sure"
+            android:layout_width="54dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_common_button"
+            android:gravity="center"
+            android:textColor="@color/txt_button_common_light"
+            android:textSize="12sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:layout_toLeftOf="@id/btn_action_manager_sure"
+            android:layout_toRightOf="@id/riv_action_manager_head"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_action_manager_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="绿小苤"
+                android:textColor="@color/txt_title_light_standard"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_action_manager_member"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="市领导及法律卡机"
+                    android:textColor="@color/txt_light_tip_26"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/btn_action_manager_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:text="修改"
+                    android:textColor="@color/txt_button_action_manage_member_change"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/rl_action_manager_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <View
+            android:id="@+id/view_short"
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="62dp"
+            android:background="@color/color_divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="62dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_real_name"
+                    android:ems="6"
+                    android:textColor="@color/txt_light_content_54"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_real_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/txt_light_content_54"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_contact_phone"
+                    android:ems="6"
+                    android:textColor="@color/txt_light_content_54"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/txt_button_common_light"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_action_mergency"
+                    android:ems="6"
+                    android:textColor="@color/txt_light_content_54"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mergency_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/txt_light_remark"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:text="@string/action_emergency_contact_phone"
+                    android:textColor="@color/txt_light_content_54"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_mergency_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/txt_light_remark"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/action_insurance_number2"
+                    android:ems="6"
+                    android:textColor="@color/txt_light_content_54"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_insurance_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="无"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/txt_light_remark"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

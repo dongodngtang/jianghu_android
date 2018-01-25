@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_user_guide_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="V2.3.5"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_user_guide_version"/>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_user_guide_goIn"
+        android:layout_width="168dp"
+        android:layout_height="38dp"
+        android:background="@drawable/selector_user_guide_buttom"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_user_guide_version"
+        android:layout_marginBottom="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white_word"
+            android:textSize="18sp"
+            android:text="进入磨房"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

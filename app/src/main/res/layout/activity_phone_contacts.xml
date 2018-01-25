@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/back"
+        app:m_title="@string/phone_adress_book">
+
+    </net.doyouhike.app.bbs.ui.widget.common.TitleView>
+
+    <ListView
+        android:id="@+id/lv_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/color_background"
+        android:divider="@null"
+        android:dividerHeight="0dp" >
+    </ListView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_login" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_network_anomaly" />
+    
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_no_content" />
+
+</LinearLayout>

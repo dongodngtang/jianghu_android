@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/gray_bg_less"
+    tools:context=".ui.release.yueban.more.WithTemplateActivity">
+
+
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/title_act_with_more"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        android:layout_alignParentTop="true"
+        app:left_src="@drawable/ic_back_3x"
+        app:right_text="添加"
+        app:m_title="@string/title_activity_with_template" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/vi_act_with_temp_attention"
+                android:orientation="vertical"
+                android:clickable="true"
+                style="@style/with_template_view_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/vi_act_with_temp_attention_head"
+                    android:orientation="horizontal"
+                    style="@style/with_template_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/with_template_title_height">
+                    <TextView
+                        android:text="注意事项"
+                        android:textSize="@dimen/txt_with_template_title"
+                        android:textColor="@color/with_template_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+                    <ImageView
+                        android:id="@+id/iv_act_with_temp_attention_indicate"
+                        android:src="@drawable/icon_activity_main_down_3x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/vi_act_with_temp_attention_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#ffe1e1e1"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/tv_act_with_temp_attention_content"
+                        style="@style/with_template_content"
+                        android:text="@string/with_template_attention"
+                        android:layout_marginTop="@dimen/with_template_margin_vertical"
+                        android:layout_marginBottom="@dimen/with_template_margin_vertical"
+                        android:textSize="@dimen/txt_with_template_content"
+                        android:textColor="@color/with_template_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/vi_act_with_temp_disclaimer"
+                android:orientation="vertical"
+                style="@style/with_template_view_parent"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/vi_act_with_temp_disclaimer_head"
+                    style="@style/with_template_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/with_template_title_height">
+                    <TextView
+                        android:text="免责声明"
+                        android:textSize="@dimen/txt_with_template_title"
+                        android:textColor="@color/with_template_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="1dp"/>
+                    <ImageView
+                        android:id="@+id/iv_act_with_temp_disclaimer_indicate"
+                        android:src="@drawable/icon_activity_main_down_3x"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/vi_act_with_temp_disclaimer_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="#ffe1e1e1"
+                        android:layout_height="1dp"/>
+                    <TextView
+                        android:id="@+id/tv_act_with_temp_disclaimer_content"
+                        style="@style/with_template_content"
+                        android:text="@string/with_template_disclaimer"
+                        android:layout_marginTop="@dimen/with_template_margin_vertical"
+                        android:layout_marginBottom="@dimen/with_template_margin_vertical"
+                        android:textSize="@dimen/txt_with_template_content"
+                        android:textColor="@color/with_template_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

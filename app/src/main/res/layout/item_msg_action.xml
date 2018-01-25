@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_item_msg_action_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_item_msg_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_msg_item_bg"
+        android:minHeight="89dp">
+
+        <ImageView
+            android:id="@+id/iv_itemt_action_portrait"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/shape_gray_pic_bg" />
+
+        <TextView
+            android:id="@+id/tv_itemt_action_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/iv_itemt_action_portrait"
+            android:text="@string/who"
+            android:textColor="#297875"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_itemt_action_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/tv_itemt_action_name"
+            android:text="参加"
+            android:textColor="#FFCCCCCC"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/tv_itemt_action_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_itemt_action_name"
+            android:layout_marginRight="15dp"
+            android:text="@string/action_confirmed"
+            android:textColor="#FF7510"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_itemt_action_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_itemt_action_name"
+            android:layout_below="@+id/tv_itemt_action_name"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="7dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/action_title_hint"
+            android:textColor="#DE000000"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_itemt_action_verification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_itemt_action_title"
+            android:layout_below="@+id/tv_itemt_action_title"
+            android:layout_marginTop="7dp"
+            android:text="@string/action_verification_text_hint"
+            android:textColor="#8A000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_itemt_action_elapsed_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_itemt_action_name"
+            android:layout_below="@id/tv_itemt_action_verification_text"
+            android:layout_marginBottom="14dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/elapsed_time_hint"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_divider" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

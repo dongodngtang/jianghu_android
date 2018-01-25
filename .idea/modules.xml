@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" filepath="$PROJECT_DIR$/FlycoDialog_Lib/FlycoDialog_Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OneSDK/OneSDK.iml" filepath="$PROJECT_DIR$/OneSDK/OneSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PinnedSectionListLibrary/PinnedSectionListLibrary.iml" filepath="$PROJECT_DIR$/PinnedSectionListLibrary/PinnedSectionListLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefreshLibrary/PullToRefreshLibrary.iml" filepath="$PROJECT_DIR$/PullToRefreshLibrary/PullToRefreshLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-adapter-library/base-adapter-library.iml" filepath="$PROJECT_DIR$/base-adapter-library/base-adapter-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calendar/calendar.iml" filepath="$PROJECT_DIR$/calendar/calendar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/easeui/easeui.iml" filepath="$PROJECT_DIR$/easeui/easeui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jianghu-android.iml" filepath="$PROJECT_DIR$/jianghu-android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nohttp-okhttp/nohttp-okhttp.iml" filepath="$PROJECT_DIR$/nohttp-okhttp/nohttp-okhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uilibrary/uilibrary.iml" filepath="$PROJECT_DIR$/uilibrary/uilibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!-- 顶部栏 -->
+
+    <RelativeLayout
+        android:id="@+id/llyt_search_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        android:background="@color/color_theme">
+
+        <LinearLayout
+            android:id="@+id/ll_add_user"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="7dp"
+                android:src="@drawable/selector_search_icon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/add_user"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/title_left_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:onClick="rollBack"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_back_3x" />
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_title_small" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 渐变 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/llyt_phone_adress_book"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/selector_list_item_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_home_addfriend_phone_3x" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_search_user_tongxulu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/phone_adress_book"
+                    android:textColor="@color/txt_title_dark_87"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_search_user_tongxulu"
+                    android:text="@string/about_the_friends_of_phone_adress"
+                    android:textColor="#bfbfbf"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <ImageView style="@style/vi_setting_main_item_arrow" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_invite_friend"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/selector_list_item_bg">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_divider" />
+
+            <ImageView
+                android:id="@+id/iv_label_add_friend"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/addfriend_icon_invitefriends" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/iv_label_add_friend"
+                android:text="邀请好友"
+                android:textColor="@color/txt_title_dark_87"
+                android:textSize="14sp" />
+
+            <ImageView
+                style="@style/vi_setting_main_item_arrow"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/rl_act_search_user_recommend_user_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_act_search_user"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="14dp"
+                android:gravity="bottom"
+                android:paddingBottom="8dp"
+                android:text="@string/recommend_attention"
+                android:textColor="#42000000" />
+
+            <!-- 描边 -->
+
+            <View
+                android:id="@+id/v_act_search_user_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/color_divider" />
+
+            <ListView
+                android:id="@+id/lv_recommend_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

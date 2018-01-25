@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="net.doyouhike.app.bbs.ui.user.other.OtherActivity">
+
+    <net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout
+        android:id="@+id/ptr_act_other_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <net.doyouhike.app.bbs.ui.user.other.ViOtherContent
+            android:id="@+id/vc_act_other_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </net.doyouhike.app.library.ui.widgets.XSwipeRefreshLayout>
+</RelativeLayout>

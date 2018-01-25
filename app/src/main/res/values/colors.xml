@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="home_activity">#2B96E8</color>
+
+
+    <color name="clickable">#FF48ADA0</color>
+    <color name="unclickable">#BFBFBF</color>
+
+    <color name="load_bg">#FFE2E2E2</color>
+
+    <color name="sr_color_primary">#DDDDDD</color>
+
+
+    <color name="gray_bg">#BFBFBF</color>
+    <color name="gray_bg_less">#f2f2f2</color>
+    <color name="dark_grey_bg">#666666</color>
+    <color name="orange_bg">#FF7510</color>
+    <color name="blue_bg">#2B96E8</color>
+
+
+    <color name="line_bg">#e1e1e1</color>
+
+    <color name="main_bottom_bar_word">#FFB3B3B3</color>
+    <color name="white_word">#FFFFFFFF</color>
+    <color name="transparency_white_word">#33FFFFFF</color>
+    <color name="gray_word">#BFBFBF</color>
+    <color name="dark_grey_word">#666666</color>
+    <color name="blue_word">#2B96E8</color>
+    <color name="black_word">#1A1A1A</color>
+    <color name="orange_word">#FF7510</color>
+
+    <color name="item">#FFFFFFFF</color>
+    <color name="item_pressed">@color/color_background_part</color>
+    <color name="setting_item">#FFFFFFFF</color>
+    <color name="setting_item_pressed">#FFDDDDDD</color>
+
+    <color name="text_info">#404040</color>
+    <color name="bg_white">#fdfdfd</color>
+
+
+
+    <color name="translucent_background">#7F000000</color>
+    <color name="percent_95_translucent">#F0000000</color>
+
+
+    <color name="search_bg">#7F000000</color>
+    <color name="status_bg">#FF48ADA0</color>
+    <color name="text_bold">#49a4e9</color>
+    <color name="text_black">#333333</color>
+    <color name="text_gray">#cccccc</color>
+
+
+
+
+    <color name="selector_msg_follow_selected">#f0fbff</color>
+    <color name="selector_msg_follow_default">#FFFFFFFF</color>
+
+    <color name="tag_txt_default">#6a6c72</color>
+
+    <color name="tag_txt_selected">#e1e1e1</color>
+
+    <color name="bg_tag_home_item_pressed">#08000000</color>
+    <color name="bg_tag_home_item_normal">#ffffffff</color>
+    <!--me 的标签页-->
+    <color name="txt_me_navi_title_content">#8A000000</color>
+    <color name="txt_me_navi_title_num">#42030303</color>
+    <color name="me_navi_title_parent">#e1e1e1</color>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 自定义Dialog的背景颜色 -->
+
+    <color name="text_color">#FFFFFF</color><!-- 自定义Dialog的标题同内容部分的分割线 -->
+
+
+    <color name="btn_press_color">#FFa5281b</color><!-- 自定义Dialog中button未点击时的颜色 -->
+    <color name="btn_unpress_color">#FFc0392b</color><!-- 黑色字体颜色 -->
+    <color name="textcolor_black">#000000</color><!-- 浅灰色字体颜色 -->
+    <color name="textcolor_light_grey">#807e7a</color><!-- 红色字体颜色 -->
+    <color name="textcolor_red">#e30000</color><!-- 红色字体颜色 -->
+    <color name="textcolor_green">#22ad38</color><!-- 非保险橘黄色字体颜色 -->
+    <color name="not_surance_yellow">#ffbb38</color><!-- 保险蓝色字体颜色 -->
+    <color name="surance_blue">#3598da</color><!-- 浅蓝色字体颜色 -->
+
+    <color name="base_bg">#FBFBFB</color><!-- 首页上方边框的颜色，深灰 -->
+
+
+    <color name="home_text_light_black">#333333</color><!-- 首页上方左侧个人信息代用名文字的颜色，略深黑 -->
+
+
+
+
+
+    <color name="black_more_half">#55111111</color><!-- dialog的ok按钮未选择的颜色 -->
+
+
+
+    <color name="btn_dialog_time_machine_past">#5a3821</color>
+    <color name="txt_dialog_time_machine_past">#F7EED5</color>
+    <color name="btn_dialog_time_machine_future">#9ffdfe</color>
+    <color name="txt_dialog_time_machine_future">#0b0b0d</color>
+
+    <!--约伴_文字模板-->
+    <color name="with_template_title">#8a000000</color>
+    <color name="with_template_detail">#ff666666</color>
+    <color name="action_progess_status">#42000000</color>
+
+    <!--设置相关-->
+    <color name="setting_item_title">#030303</color>
+
+    <!--消息相关-->
+    <color name="msg_item_selected">#FFF0FBFF</color>
+    <!--评论列表相关-->
+    <color name="comment_item_selected">#FFEDF3F1</color>
+    <color name="menu_comment_normal">#FFFAFAFA</color>
+    <color name="menu_comment_press">@color/color_background_part</color>
+    <color name="action_attend">#FF7510</color>
+    <color name="action_attend_click">#C65A23</color>
+</resources>

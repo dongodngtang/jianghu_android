@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fitsSystemWindows="true">
+    <!-- 顶部  标题-->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/tar_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:left_src="@drawable/ic_back_3x"
+        app:m_title="活动详情"
+        app:right_src="@drawable/selector_action_detail_more" />
+
+    <!--活动详情 底部-->
+
+
+    <net.doyouhike.app.bbs.ui.widget.common.OnScrollListenerScrollView
+        android:id="@+id/sv_action_detail_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:overScrollMode="never"
+        android:layout_below="@+id/tar_title">
+
+
+        <!--活动正文-->
+
+        <include layout="@layout/activity_action_detail_header1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+
+    </net.doyouhike.app.bbs.ui.widget.common.OnScrollListenerScrollView>
+
+    <include
+        layout="@layout/activity_action_detail_header_bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

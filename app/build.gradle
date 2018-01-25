@@ -1,0 +1,90 @@
+apply plugin: 'com.android.application'
+apply plugin: 'newrelic'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+
+    compileSdkVersion 23
+    buildToolsVersion project.BUILD_TOOL
+    defaultConfig {
+        applicationId "net.doyouhike.app.bbs"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 30
+        versionName "2.4.3"
+        multiDexEnabled true
+
+        buildConfigField("String", "X_ZAITU_APP_KEY", "\"b7a15e39de9bd95ba745a1a4534109d7\"")
+        buildConfigField("String", "APP_VERSION", "\"2.4.3\"")
+        buildConfigField("String", "APP_CODE", "\"30\"")
+        //阿里百川 反馈
+        buildConfigField("String", "FEED_BACK_KEY", "\"23369821\"")
+    }
+    buildTypes {
+        release {
+            manifestPlaceholders = [UMENG_APP_KEY: "5602039ce0f55a38580028ac", EASEMOB_APPKEY: "zaitutech#jianghu-product"]
+
+            buildConfigField("String", "API_URL", "\"http://openapi.zaitu.cn/server\"")
+            buildConfigField("String", "SERVER_URL", "\"http://openapi.zaitu.cn/v20/\"")
+            buildConfigField("String", "ENV_TYPE", "\"production\"")
+
+            buildConfigField("String", "NEW_RELIC_KEY", "\"AA539d5b77cf28437d4cbc90b15f0726f4f8989466\"")
+            minifyEnabled false
+            // proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            buildConfigField("String", "NEW_RELIC_KEY", "\"AA309653ce8d845a3fa4fcb4f4a365991493e7a23e\"")
+
+//            buildConfigField("String","API_URL","\"openapi.zaitu.cn/server\"")
+//            buildConfigField("String","SERVER_URL","\"openapi.zaitu.cn/v20/\"")
+//            buildConfigField("String","ENV_TYPE","\"production\"")
+//
+            buildConfigField("String", "API_URL", "\"openapi.test.zaitu.cn/server\"")
+            buildConfigField("String", "SERVER_URL", "\"http://openapi.test.zaitu.cn/v20/\"")
+            buildConfigField("String", "ENV_TYPE", "\"testing\"")
+            manifestPlaceholders = [UMENG_APP_KEY: "56efb34fe0f55a5c8a0000e6", EASEMOB_APPKEY: "zaitutech#jianghu-test"]
+
+//            buildConfigField("String", "API_URL", "\"192.168.1.231:9090/server\"")
+//            buildConfigField("String", "SERVER_URL", "\"http://192.168.1.231:9090/v20/\"")
+//            buildConfigField("String", "ENV_TYPE", "\"dev\"")
+//            manifestPlaceholders = [UMENG_APP_KEY: "56efb34fe0f55a5c8a0000e6", EASEMOB_APPKEY: "zaitutech#jianghutesting"]
+
+
+        }
+
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile project(':PullToRefreshLibrary')
+    compile project(':calendar')
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile files('libs/AMap_2DMap_V2.8.1_20160202.jar')
+    compile project(':OneSDK')
+    compile project(':base-adapter-library')
+    compile 'com.github.paolorotolo:appintro:4.0.0'
+    compile 'com.newrelic.agent.android:android-agent:5.8.1'
+    compile project(':easeui')
+    compile 'org.greenrobot:greendao:3.1.1'
+    compile project(':nohttp-okhttp')
+    compile 'me.leolin:ShortcutBadger:1.1.11'
+}
+
+greendao {
+    schemaVersion 1
+    daoPackage "net.doyouhike.app.bbs.biz.db.green.help"
+    targetGenDir 'src/main/java'
+}
+
+

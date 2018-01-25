@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/action_attend"
+        app:m_title="@string/action_notice"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_white" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:paddingBottom="@dimen/dimen_48px"
+                android:paddingLeft="@dimen/dimen_17dp"
+                android:paddingTop="@dimen/dimen_17dp"
+                android:text="@string/action_read"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="@dimen/txt_title_small" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_48px"
+                android:layout_marginLeft="@dimen/dimen_17dp"
+                android:layout_marginRight="@dimen/dimen_17dp"
+                android:lineSpacingExtra="@dimen/dimen_12px"
+                android:text="1.认同“安全，环保，自助”的磨房户外理念。遵从《磨房告示》户外活动规则。"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_48px"
+                android:layout_marginLeft="@dimen/dimen_17dp"
+                android:layout_marginRight="@dimen/dimen_17dp"
+                android:lineSpacingExtra="@dimen/dimen_12px"
+                android:text="2.服从统一指挥，发扬团队协作精神，倡导自主与必要的互助相结合的户外理念。不擅自离开活动线路。"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_48px"
+                android:layout_marginLeft="@dimen/dimen_17dp"
+                android:layout_marginRight="@dimen/dimen_17dp"
+                android:lineSpacingExtra="@dimen/dimen_12px"
+                android:text="3.注意安全，不做无保护，无必要的攀爬，冒险。注意保持队伍行进紧凑，严防迷路和被打劫。"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_48px"
+                android:layout_marginLeft="@dimen/dimen_17dp"
+                android:layout_marginRight="@dimen/dimen_17dp"
+                android:lineSpacingExtra="@dimen/dimen_12px"
+                android:text="4.不乱丢垃圾，不破坏环境植被。注意环保，鼓励拾捡垃圾。做到“只留下你的脚印，只带走你的回忆。”"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_48px"
+                android:layout_marginLeft="@dimen/dimen_17dp"
+                android:layout_marginRight="@dimen/dimen_17dp"
+                android:lineSpacingExtra="@dimen/dimen_12px"
+                android:text="5.自行购买保险。出发前请把组织人的紧急联系方式留给紧急联系人。"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_48px"
+                android:layout_marginLeft="@dimen/dimen_17dp"
+                android:layout_marginRight="@dimen/dimen_17dp"
+                android:lineSpacingExtra="@dimen/dimen_12px"
+                android:text="6.如果在活动中遇到异常情况，领队有权利决定修改线路。"
+                android:textColor="@color/txt_light_content_54"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

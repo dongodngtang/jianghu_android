@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/title_edit_server"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:m_title="服务器地址设置"
+        app:left_text="取消"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="常用地址"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+<RadioGroup
+    android:id="@+id/gr_server_url_list"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="20dp">
+    <RadioButton
+        android:id="@+id/rb_server_url_dev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开发环境(dev)"/>
+    <RadioButton
+        android:id="@+id/rb_server_url_testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试环境(testing)"/>
+    <RadioButton
+        android:id="@+id/rb_server_url_env"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="正式环境(production)"/>
+</RadioGroup>
+    <EditText
+        android:id="@+id/edit_dev_server_url"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:hint="请填写正确的服务器地址"
+        android:gravity="top"
+        android:textColorHint="@color/blue_word"
+        android:textColor="@color/text_black_color_default"
+        android:padding="10dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/tv_dev_server_url_comfirl"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="确认"
+        android:textColor="@color/white_word"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:background="@drawable/selector_blue_button_bg"/>
+
+</LinearLayout>

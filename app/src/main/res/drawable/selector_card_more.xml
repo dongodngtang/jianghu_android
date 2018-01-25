@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/icon_card_more_pr_3x" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/icon_card_more_default_3x"></item>
+
+</selector>

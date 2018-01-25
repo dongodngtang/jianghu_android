@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <!-- 顶部栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fdfdfd" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_tag"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="@string/complete"
+            android:textColor="#BFBFBF"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/roll_back"
+            android:onClick="rollBack"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_3x" />
+    </RelativeLayout>
+
+    <!-- 渐变 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/shape_grey_gradient" />
+
+    <LinearLayout
+        android:id="@+id/llyt_tags"
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:background="#FFFFFFFF"
+        android:gravity="top"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon_tag"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_post_tag_unused_3x" />
+
+        <TextView
+            android:id="@+id/tv_tag1"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/select_tag_which_you_want"
+            android:textColor="#BFBFBF"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_tag2"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:textColor="#2B96E8"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_tag3"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:layout_marginLeft="6dp"
+            android:gravity="center_vertical"
+            android:textColor="#2B96E8"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_side"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC" />
+
+    <GridView
+        android:id="@+id/gv_tags"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF"
+        android:horizontalSpacing="@dimen/dimen_4dp"
+        android:numColumns="4"
+        android:padding="10dp"
+        android:verticalSpacing="11dp" >
+    </GridView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        layout="@layout/widget_login" />
+
+</LinearLayout>

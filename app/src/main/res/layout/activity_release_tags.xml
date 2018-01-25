@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!-- 顶部栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        android:background="@color/color_theme">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/add_tag"
+            android:textColor="@color/txt_title_dark_standard"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:text="@string/complete"
+            android:textColor="@color/txt_title_dark_standard"
+            android:textSize="16sp" />
+        <LinearLayout
+            android:id="@+id/title_left_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:onClick="rollBack"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_back_3x"/>
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/back"
+                android:textSize="@dimen/txt_title_small"   />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="选择您想要的标签"
+            android:textColor="#bfbfbf"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_tip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gv_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4" />
+
+        <LinearLayout
+            android:id="@+id/line_add_tag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/txt_live_tip"
+                android:textSize="12sp"
+                android:text="最近热门"/>
+            <View
+                android:layout_width="140dp"
+                android:layout_height="1dp"
+                android:background="@color/color_divider" />
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/gv_s_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="4" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:background="#FFFFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_pieces"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_pieces"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/selector_main_bottom_pieces" />
+
+        <TextView
+            android:id="@+id/tv_pieces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_pieces"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/home"
+            android:textColor="#FFB3B3B3"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_activity"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_action"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/selector_main_bottom_activity" />
+
+        <TextView
+            android:id="@+id/tv_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_action"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/action"
+            android:textColor="#FFB3B3B3"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_road"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_road"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/selector_main_bottom_road" />
+
+        <TextView
+            android:id="@+id/tv_raod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_road"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="线路"
+            android:textColor="#FFB3B3B3"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_message"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/selector_main_bottom_messsage" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_message"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/message_title"
+            android:textColor="#FFB3B3B3"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/tv_item_msg_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/iv_message"
+            android:layout_alignTop="@id/iv_message"
+            android:layout_marginRight="-8dp"
+            android:layout_marginTop="-5dp"
+            android:background="@drawable/bg_main_message_circle_red"
+            android:gravity="center_horizontal"
+            android:minEms="2"
+            android:padding="3dp"
+            android:text="0"
+            android:textColor="#FFFFFFFF"
+            android:textSize="8sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_item_msg_has_unread"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignRight="@id/iv_message"
+            android:layout_alignTop="@id/iv_message"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/mark_new_msg_3x"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlyt_me"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_me"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/selector_main_bottom_me" />
+
+        <TextView
+            android:id="@+id/tv_me"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_me"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/me"
+            android:textColor="#FFB3B3B3"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/iv_me_no_read"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignRight="@id/iv_me"
+            android:layout_alignTop="@id/iv_me"
+            android:layout_marginRight="-3dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/mark_new_msg_3x"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

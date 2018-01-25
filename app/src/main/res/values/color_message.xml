@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--消息  color -->
+
+    <!--未读消息 -->
+    <color name="bg_message_itme_unread">#F0FBFF</color>
+
+</resources>

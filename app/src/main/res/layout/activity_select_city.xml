@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        app:m_title="@string/action_select_city"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FDFDFD" >
+
+        <ListView
+            android:id="@+id/lv_select_city"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:listSelector="@android:color/transparent"
+            android:divider="@null" />
+
+        <TextView
+            android:id="@+id/tv_select_city_dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <net.doyouhike.app.bbs.ui.widget.action.SideBar
+            android:id="@+id/sidrbar_select_city"
+            android:layout_width="26dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+    </FrameLayout>
+
+</LinearLayout>

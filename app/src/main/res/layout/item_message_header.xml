@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_news_like"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_setting_item">
+
+        <ImageView
+            android:id="@+id/iv_item_news_like_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/icon_new_like" />
+
+        <TextView
+            android:id="@+id/tv_item_news_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/iv_item_news_like_icon"
+            android:text="@string/like"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_news_like_bell"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_item_news_like"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/ic_msg_main_nobell_3x"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_item_news_like_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_news_like"
+            android:layout_below="@id/tv_item_news_like"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tv_item_news_like_bell"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_item_news_like_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_message_circle_red"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_item_news_like_read"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mark_new_msg_3x"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_news_like_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="64dp"
+            android:background="@color/color_divider" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_news_comment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_setting_item">
+
+        <ImageView
+            android:id="@+id/iv_item_news_comment_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/icon_new_comment" />
+
+        <TextView
+            android:id="@+id/tv_item_news_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/iv_item_news_comment_icon"
+            android:text="@string/comment"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_news_comment_bell"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_item_news_comment"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/ic_msg_main_nobell_3x"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_item_news_comment_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_news_comment"
+            android:layout_below="@id/tv_item_news_comment"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tv_item_news_comment_bell"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_item_news_comment_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_message_circle_red"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_item_news_comment_read"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mark_new_msg_3x"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_news_comment_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="64dp"
+            android:background="@color/color_divider" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_item_news_action"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_setting_item">
+
+        <ImageView
+            android:id="@+id/iv_item_news_action_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/icon_news_activity" />
+
+        <TextView
+            android:id="@+id/tv_item_news_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_toRightOf="@id/iv_item_news_action_icon"
+            android:text="@string/action"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_item_news_action_bell"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_item_news_action"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="14dp"
+            android:background="@drawable/ic_msg_main_nobell_3x"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_item_news_action_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_item_news_action"
+            android:layout_below="@id/tv_item_news_action"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/tv_item_news_action_bell"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_item_news_action_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_message_circle_red"
+            android:gravity="center_horizontal"
+            android:padding="3dp"
+            android:text="12"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tv_item_news_action_read"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mark_new_msg_3x"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_item_news_action_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"
+            android:textColor="@color/txt_live_tip"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp" />
+
+
+</LinearLayout>

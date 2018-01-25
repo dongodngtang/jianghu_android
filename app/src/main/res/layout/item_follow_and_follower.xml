@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_top"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_follow_and_follower_parent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/selector_list_item_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_itemt_portrait"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/none_header" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/btn_itemt_follow_state"
+                android:layout_width="54dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="14dp"
+                android:gravity="center"
+                android:minEms="4"
+                android:text="关注"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_itemt_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="12dp"
+                android:layout_toLeftOf="@id/btn_itemt_follow_state"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/who"
+                android:textColor="#bb030303"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_itemt_autograph"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_itemt_nickname"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@id/btn_itemt_follow_state"
+                android:singleLine="true"
+                android:textColor="#44030303"
+                android:textSize="13sp" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider" />
+
+</LinearLayout>

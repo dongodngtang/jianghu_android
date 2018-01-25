@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/v_item_msg_comment_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:id="@+id/rl_item_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_msg_item_bg"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/iv_itemt_commenter_portrait"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/none_header" />
+
+        <ImageView
+            android:id="@+id/iv_itemt_commenter_isread"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/mark_new_msg_3x"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_itemt_commenter_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论你的人"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="@color/color_assist"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_itemt_comment_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColorLink="@color/txt_button_common_light"
+                android:textColor="@color/txt_light_tip_26"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_itemt_creat_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="12:04"
+                android:textColor="@color/txt_light_tip_26"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlyt_item_commenter_original"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="7dp"
+            android:clickable="false">
+
+            <ImageView
+                android:id="@+id/iv_itemt_commenter_original"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/activity_pic" />
+
+            <TextView
+                android:id="@+id/tv_itemt_commenter_original"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/alpha_26_black"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:padding="5dp"
+                android:text="@string/msg_commenter_original_hint"
+                android:textColor="@color/txt_dark_content"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/v_gap"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_divider" />
+
+</LinearLayout>

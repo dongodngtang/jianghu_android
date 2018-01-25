@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_select_view"
+    android:layout_width="118dp"
+    android:layout_height="118dp">
+
+
+    <ImageView
+        android:id="@+id/iv_send_img"
+        android:layout_width="106dp"
+        android:layout_height="106dp"
+        android:layout_centerInParent="true" />
+
+
+    <ImageView
+        android:id="@+id/iv_select_del"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/post_pic_icon_delete" />
+</RelativeLayout>

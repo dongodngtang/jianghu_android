@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llyt_this"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!-- 标题栏 -->
+    <net.doyouhike.app.bbs.ui.widget.common.TitleView
+        android:id="@+id/navigation_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/vi_activity_navi_height"
+        app:left_src="@drawable/ic_back_3x"
+        app:left_text="@string/personal_message_title"
+        app:m_title="@string/nickname"
+        app:right_text="@string/save"
+        app:right_text_color="@color/txt_title_right" />
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" >
+
+
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:gravity="top"
+            android:hint="@string/input_new_nickname"
+            android:padding="12dp"
+            android:singleLine="true"
+            android:textColor="#FF000000"
+            android:textColorHint="@color/gray_word"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_setting_nickname_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_alignBottom="@id/et_nickname"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/input_icon_delete_black" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_surplus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/et_nickname"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="20"
+        android:textColor="@color/gray_word"
+        android:textSize="15sp" />
+</LinearLayout>

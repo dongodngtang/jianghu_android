@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_repost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_standard"
+        android:background="@drawable/selector_list_item_bg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_report_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="@string/copying"
+            android:textColor="@color/txt_report_choose"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/iv_copying"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/icon_focused_3x" />
+
+        <View
+            android:id="@+id/v_side"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_divider" />
+    </RelativeLayout>
+
+
+</LinearLayout>

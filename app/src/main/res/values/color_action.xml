@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_action_line">#E1E1E1</color>
+
+
+
+    <!--活动正文 内容字体-->
+    <color name="text_action_detail_content">@color/txt_title_light_standard</color>
+
+    <!--活动 赞 字体颜色-->
+    <color name="text_action_detail_zan">#FFC3C3C3</color>
+
+    <!--活动 评论 字体颜色-->
+    <color name="text_action_detail_pinlun">#42000000</color>
+
+
+
+    <!--活动 评论 字体颜色-->
+    <color name="text_action_detail_dis">#48ADA0</color>
+
+    <!--活动 编辑活动 字体颜色-->
+    <color name="bg_action_detail_edit">#FDE6D5</color>
+
+    <!--活动 详情 更多 字体模板-->
+    <color name="text_action_detail_more_template">#42000000</color>
+
+    <!--活动 详情 更多 内容-->
+    <color name="text_action_detail_more_content">#8A000000</color>
+
+    <!--活动 详情 赞背景颜色-->
+    <color name="bg_action_detail_zan_unselected">#48ADA0</color>
+
+    <color name="bg_action_detail_zan_selected">#113C5D</color>
+    <!--活动详情 评论  线-->
+    <color name="bg_action_detail_comment_line">#E1E1E1</color>
+
+    <!--活动详情 评论人-->
+    <color name="bg_action_detail_comment_name">#1A1A1A</color>
+
+    <!--活动详情 时间-->
+    <color name="bg_action_detail_comment_time">#C3C3C3</color>
+
+    <!--活动列表 时间-->
+    <color name="text_action_list_time">#42000000</color>
+
+</resources>

@@ -1,0 +1,33 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="dlgAnimation3" parent="android:Animation">
+
+        <!-- 进入时的动画 -->
+        <item name="@android:windowEnterAnimation">@anim/dlg_up3</item>
+        <!-- 退出时的动画 -->
+        <item name="@android:windowExitAnimation">@anim/dlg_down</item>
+    </style>
+
+    <style name="BaseDialog" parent="@android:style/Theme.Light.NoTitleBar"></style>
+
+    <style name="NumPickerNoBar" parent="BaseDialog"></style>
+
+
+    <style name="alertViewDailog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/bg_dialog_alert_view</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="big_image_loading" parent="android:Theme.Holo.Dialog">
+        <item name="android:width">16dip</item>
+        <item name="android:height">16dip</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+
+</resources>

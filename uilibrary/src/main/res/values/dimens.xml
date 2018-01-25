@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--标题高度-->
+    <dimen name="title_standard">44dp</dimen>
+    <!--标题文字 用于标题类文本-->
+    <dimen name="txt_title_standard">17sp</dimen>
+    <!--小标题 用于短且重要文本-->
+    <dimen name="txt_title_small">16sp</dimen>
+    <!--正文 用于长文本-->
+    <dimen name="txt_content">15sp</dimen>
+    <!--提示文字 用于输入提示文本等-->
+    <dimen name="txt_tip">14sp</dimen>
+    <!--备注文字 用于备注、提示类文本-->
+    <dimen name="txt_remark">12sp</dimen>
+
+
+
+    <!--第二提示语 margin top-->
+    <dimen name="tip_second_word_margin_top">28.4dp</dimen>
+
+    <!--Snackbar-->
+    <dimen name="snack_bar_height">48dp</dimen>
+    <dimen name="snack_bar_max_height">80dp</dimen>
+    <dimen name="snack_bar_text_size">14sp</dimen>
+    <dimen name="snack_bar_left_right_padding">24dp</dimen>
+    <dimen name="snack_bar_top_padding">16dp</dimen>
+    <dimen name="snack_bar_bottom_padding">12dp</dimen>
+    <dimen name="snack_bar_animation_position">0dp</dimen>
+    <dimen name="snack_bar_action_text_size">14sp</dimen>
+
+    <!-- The bottom offset the undo popup should have -->
+    <dimen name="elv_undo_bottom_offset">15dp</dimen>
+    <!-- The touch slop you need to cause a swipe instead of a scroll -->
+    <dimen name="elv_touch_slop">32dp</dimen>
+</resources>

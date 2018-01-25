@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/loading_0_3x">
+    </item>
+
+    <item android:duration="100"  android:drawable="@drawable/loading_4_3x" >
+    </item>
+
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_4_3x"-->
+            <!--android:gravity="center" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_8_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_8_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_12_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_12_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_16_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_16_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_20_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_20_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_24_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_24_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100"  android:drawable="@drawable/loading_28_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_28_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100"  android:drawable="@drawable/loading_32_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_32_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100"  android:drawable="@drawable/loading_36_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_36_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100"   android:drawable="@drawable/loading_40_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_40_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100"  android:drawable="@drawable/loading_44_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_44_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_48_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_48_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_52_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_52_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_56_3x">
+
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_56_3x"-->
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_60_3x">
+
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_60_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <!--<item android:duration="100" android:drawable="@drawable/loading_64_3x">
+
+    </item>-->
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_64_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_68_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_68_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_72_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_72_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+    <item android:duration="100" android:drawable="@drawable/loading_76_3x">
+    </item>
+    <!--<item android:duration="100">-->
+        <!--<clip-->
+            <!--android:clipOrientation="horizontal"-->
+            <!--android:drawable="@drawable/loading_76_3x"-->
+
+            <!--android:gravity="left" />-->
+    <!--</item>-->
+
+
+
+</animation-list>
